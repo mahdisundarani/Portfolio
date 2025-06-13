@@ -25,10 +25,10 @@ const About = () => {
             <span className="text-white">I am a </span>
             <ReactTypingEffect
               text={[
-                'Fullstack Developer',
-                'App Developer',
-                'UI/UX Designer',
-                'Coder',
+                'AI Engineer',
+                'AI Researcher',
+                'MERN Stack Developer',
+                'Software Engineer',
               ]}
               speed={100}
               eraseSpeed={50}
@@ -40,12 +40,8 @@ const About = () => {
             />
           </h3>
           {/* About Me Paragraph */}
-          <p className="text-base sm:text-lg md:text-lg text-gray-400 mb-10 mt-8 leading-relaxed">
-            I am a full-stack developer with over 2 years of experience in
-            building scalable web applications. Skilled in both front-end and
-            back-end development, I specialize in the MERN stack and other
-            modern technologies to create seamless user experiences and
-            efficient solutions.
+          <p className="text-base sm:text-lg md:text-lg text-gray-400 mb-10 mt-8 leading-relaxed px-2">
+            I'm Mahdi Sundarani, a 4th-year BE IT student and AI/ML apprentice at Cognyx AI. My focus lies in core machine learning domains—supervised, unsupervised, deep, and reinforcement learning, NLP, Generative AI, and LLMs—with a strong foundation in mathematics and programming. Previously a MERN stack and Next.js trainee, I now aim to contribute to impactful machine learning research and innovation.
           </p>
           {/* Resume Button */}
           <a
