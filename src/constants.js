@@ -122,7 +122,7 @@ export const SkillsInfo = [
       img: CognyxLogo,
       role: "AI Engineer ApprenticeShip",
       company: "Cognyx AI",
-      date: "April 2024 - Present",
+      date: "August 2024 - Present",
       desc: "Developed dynamic and scalable web applications using the MERN stack, handling both frontend and backend development. Collaborated with cross-functional teams to build responsive UI, implement RESTful APIs, and optimize application performance in an agile environment.",
       skills: [
         "HTML",
@@ -142,7 +142,7 @@ export const SkillsInfo = [
       img: CognyxLogo,
       role: "Manual Tester",
       company: "Cognyx AI",
-      date: "April 2024 - Present",
+      date: "August 2024 - November 2024",
       desc: "Developed dynamic and scalable web applications using the MERN stack, handling both frontend and backend development. Collaborated with cross-functional teams to build responsive UI, implement RESTful APIs, and optimize application performance in an agile environment.",
       skills: [
         "HTML",
@@ -162,7 +162,7 @@ export const SkillsInfo = [
       img: CognyxLogo,
       role: "MERN Stack And NEXTJS ApprenticeShip",
       company: "Cognyx AI",
-      date: "Nov 2023 - August 2024",
+      date: "November 2023 - August 2024",
       desc: "Contributed to innovative projects as a Fullstack Engineer, leading both frontend and backend development using technologies such as HTML, CSS, JavaScript, PHP, SQL, Bootstrap, and ReactJS. Worked closely with the team to deliver responsive, high-performance web applications and improve user experience through seamless integration of various technologies.",
       skills: [
         "ReactJS",
