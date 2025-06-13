@@ -37,6 +37,8 @@ import csharpLogo from './assets/tech_logo/csharp.png';
 import webverseLogo from './assets/company_logo/webverse_logo.png';
 import agcLogo from './assets/company_logo/agc_logo.png';
 import newtonschoolLogo from './assets/company_logo/newtonschool_logo.png';
+import CognyxLogo from './assets/company_logo/Cognyx_logo.png';
+import CreArtLogo from './assets/company_logo/CreArt_logo.png';
 
 // Education Section Logo's
 import glaLogo from './assets/education_logo/gla_logo.png';
@@ -117,9 +119,29 @@ export const SkillsInfo = [
   export const experiences = [
     {
       id: 0,
-      img: webverseLogo,
-      role: "Fullstack Developer",
-      company: "Webverse Digital",
+      img: CognyxLogo,
+      role: "AI Engineer ApprenticeShip",
+      company: "Cognyx AI",
+      date: "April 2024 - Present",
+      desc: "Developed dynamic and scalable web applications using the MERN stack, handling both frontend and backend development. Collaborated with cross-functional teams to build responsive UI, implement RESTful APIs, and optimize application performance in an agile environment.",
+      skills: [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "React JS",
+        "TypeScript",
+        "Node JS",
+        "Tailwind CSS",
+        "MongoDb",
+        "Redux",
+        " Next Js",
+      ],
+    },
+      {
+      id: 1,
+      img: CognyxLogo,
+      role: "Manual Tester",
+      company: "Cognyx AI",
       date: "April 2024 - Present",
       desc: "Developed dynamic and scalable web applications using the MERN stack, handling both frontend and backend development. Collaborated with cross-functional teams to build responsive UI, implement RESTful APIs, and optimize application performance in an agile environment.",
       skills: [
@@ -136,11 +158,11 @@ export const SkillsInfo = [
       ],
     },
     {
-      id: 1,
-      img: agcLogo,
-      role: "Fullstack Engineer",
-      company: "Agumentik Group of Companies",
-      date: "July 2023 - March 2024",
+      id: 2,
+      img: CognyxLogo,
+      role: "MERN Stack And NEXTJS ApprenticeShip",
+      company: "Cognyx AI",
+      date: "Nov 2023 - August 2024",
       desc: "Contributed to innovative projects as a Fullstack Engineer, leading both frontend and backend development using technologies such as HTML, CSS, JavaScript, PHP, SQL, Bootstrap, and ReactJS. Worked closely with the team to deliver responsive, high-performance web applications and improve user experience through seamless integration of various technologies.",
       skills: [
         "ReactJS",
@@ -153,11 +175,11 @@ export const SkillsInfo = [
       ],
     },
     {
-      id: 2,
-      img: newtonschoolLogo,
-      role: "Frontend Intern",
-      company: "Newton School",
-      date: "September 2021 - August 2022",
+      id: 3,
+      img: CreArtLogo,
+      role: "FullStack Intern",
+      company: "CreArt",
+      date: "August 2022 - June 2023",
       desc: "Worked as a Frontend Developer Intern, designing and implementing scalable UI components and responsive websites using HTML, CSS, JavaScript, Bootstrap, and Material UI. Collaborated with the design team to translate wireframes and prototypes from Figma into interactive, user-friendly web pages.",
       skills: [
         "HTML",
@@ -178,7 +200,7 @@ export const SkillsInfo = [
       date: "Sept 2023 - May 2026",
       grade: "8.52 CGPA",
       desc: "I am doing my Bechlors's degree (BE) in Information Technology from AIT University Affiliated with GTU, Ahmedabad. During my time at AIT, I gained a strong foundation in programming, software development, and computer science principles. I have studied courses such as Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Web Development, and Software Engineering. I actively participated in various workshops and technical events, which enhanced my skills and knowledge. My experience at AIT (GTU) University has been instrumental in shaping my technical abilities and professional growth.",
-      degree: "Bechlors in IT Engineering - BE (Information Technology",
+      degree: "Bechlors in IT Engineering - BE (Information Technology)",
     },
     {
       id: 1,
