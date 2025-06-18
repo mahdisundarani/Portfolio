@@ -116,192 +116,203 @@ export const SkillsInfo = [
   },
 ];
 
-  export const experiences = [
-    {
-      id: 0,
-      img: CognyxLogo,
-      role: "AI Engineer ApprenticeShip",
-      company: "Cognyx AI",
-      date: "August 2024 - Present",
-      desc: "Developed dynamic and scalable web applications using the MERN stack, handling both frontend and backend development. Collaborated with cross-functional teams to build responsive UI, implement RESTful APIs, and optimize application performance in an agile environment.",
-      skills: [
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "React JS",
-        "TypeScript",
-        "Node JS",
-        "Tailwind CSS",
-        "MongoDb",
-        "Redux",
-        " Next Js",
-      ],
-    },
-      {
-      id: 1,
-      img: CognyxLogo,
-      role: "Manual Tester",
-      company: "Cognyx AI",
-      date: "August 2024 - November 2024",
-      desc: "Developed dynamic and scalable web applications using the MERN stack, handling both frontend and backend development. Collaborated with cross-functional teams to build responsive UI, implement RESTful APIs, and optimize application performance in an agile environment.",
-      skills: [
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "React JS",
-        "TypeScript",
-        "Node JS",
-        "Tailwind CSS",
-        "MongoDb",
-        "Redux",
-        " Next Js",
-      ],
-    },
-    {
-      id: 2,
-      img: CognyxLogo,
-      role: "MERN Stack And NEXTJS ApprenticeShip",
-      company: "Cognyx AI",
-      date: "November 2023 - August 2024",
-      desc: "Contributed to innovative projects as a Fullstack Engineer, leading both frontend and backend development using technologies such as HTML, CSS, JavaScript, PHP, SQL, Bootstrap, and ReactJS. Worked closely with the team to deliver responsive, high-performance web applications and improve user experience through seamless integration of various technologies.",
-      skills: [
-        "ReactJS",
-        "Redux",
-        "JavaScript",
-        "Tailwind CSS",
-        "HTML",
-        "CSS",
-        "SQL",
-      ],
-    },
-    {
-      id: 3,
-      img: CreArtLogo,
-      role: "FullStack Intern",
-      company: "CreArt",
-      date: "August 2022 - June 2023",
-      desc: "Worked as a Frontend Developer Intern, designing and implementing scalable UI components and responsive websites using HTML, CSS, JavaScript, Bootstrap, and Material UI. Collaborated with the design team to translate wireframes and prototypes from Figma into interactive, user-friendly web pages.",
-      skills: [
-        "HTML",
-        "CSS",
-        "Javascript",
-        "Bootstrap",
-        "Figma",
-        "Material UI",
-      ],
-    },
-  ];
-  
-  export const education = [
-    {
-      id: 0,
-      img: AITLogo,
-      school: "Ahmedabad Institute of Technology, Ahmedabad",
-      date: "Sept 2023 - May 2026",
-      grade: "8.52 CGPA",
-      desc: "I am doing my Bechlors's degree (BE) in Information Technology from AIT University Affiliated with GTU, Ahmedabad. During my time at AIT, I gained a strong foundation in programming, software development, and computer science principles. I have studied courses such as Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Web Development, and Software Engineering. I actively participated in various workshops and technical events, which enhanced my skills and knowledge. My experience at AIT (GTU) University has been instrumental in shaping my technical abilities and professional growth.",
-      degree: "Bechlors in IT Engineering - BE (Information Technology)",
-    },
-    {
-      id: 1,
-      img: KSELogo,
-      school: "Khyati School of Engineering, Ahmedabad",
-      date: "Sept 2020 - Aug 2023",
-      grade: "8.81 CPI",
-      desc: "I completed my polytechnical Diploma's degree in Information Technology (DEPL - IT) from Khyati College Affiliated with GTU, Ahmedabad. Throughout my studies, I was immersed in a variety of subjects that deepened my understanding of computing and technology. From exploring Data Structures and Algorithms to diving into Web Development and Database Management Systems, I gained practical insights into the world of software development. My time at BSA College allowed me to work on projects that applied theoretical concepts to real-world problems.",
-      degree: "Diploma in IT Engineering - DIPL (Information Technology)",
-    }
-  ];
-  
-  export const projects = [
-    {
-      id: 0,
-      title: "GitHub Profile Detective",
-      description:
-        "A powerful and user-friendly React.js application designed to uncover and showcase detailed GitHub profile information. Simply enter a GitHub username, and the app fetches comprehensive data, including profile stats, repositories, followers, and contributions. The intuitive interface ensures a seamless experience, making it a must-visit tool for developers and recruiters.",
-      image: githubdetLogo,
-      tags: ["HTML", "CSS", "JavaScript", "React JS", "API"],
-      github: "https://github.com/codingmastr/GitHub-Profile-Search-App-Using-React-JS",
-      webapp: "https://githubprofiledetective.netlify.app/",
-    },
-    {
-      id: 1,
-      title: "CS Prep",
-      description:
-        "A full-stack quiz-based platform designed for GATE/UGC NET students to practice previous year questions and create customized tests. The platform offers comprehensive profile stats and detailed results, helping students track and improve their preparation journey effectively.",
-      image: csprepLogo,
-      tags: ["React JS", "Node.js", "MongoDB", "Express", "HTML", "CSS", "JavaScript"],
-      github: "https://github.com/codingmastr/CSPrep",
-      webapp: "https://csprep.netlify.app/",
-    },
-    {
-      id: 2,
-      title: "Movie Recommendation App",
-      description:
-        "A React-based web application that provides movie recommendations based on different criteria, such as genres, user preferences, and popular trends. The intuitive design and smooth experience make it a go-to app for movie enthusiasts.",
-      image: movierecLogo,
-      tags: ["React JS", "API", "HTML", "CSS", "JavaScript"],
-      github: "https://github.com/codingmastr/Movie-Recommendation-App",
-      webapp: "https://movie-recommendation-app-jet.vercel.app/",
-    },
-    {
-      id: 3,
-      title: "Email Validator NPM Package",
-      description:
-        "An efficient and customizable NPM package for validating email addresses. Built using React.js and Node.js, it provides robust validation features to help developers ensure that email inputs meet required formats and standards.",
-      image: npmLogo,
-      tags: ["React JS", "Node.js", "NPM", "Validation"],
-      github: "https://github.com/codingmastr/cmtk-email-validator",
-      webapp: "https://www.npmjs.com/package/cmtk-email-validator",
-    },
-    {
-      id: 4,
-      title: "Task Reminder Chrome Extension Tool",
-      description:
-        "A productivity-boosting Chrome extension designed to help users manage and remember their daily tasks. Built using JavaScript, it offers a simple interface with reminders and task notifications to keep users on track.",
-      image: taskremLogo,
-      tags: ["JavaScript", "Chrome Extension", "HTML", "CSS"],
-      github: "https://github.com/codingmastr/Task-Reminder-Tool",
-      webapp: "chrome://extensions/?id=kngheeibjnnidhfoomkpnbeghackheci",
-    },
-    {
-      id: 5,
-      title: "Webverse Digital",
-      description:
-        "The official website for Webverse Digital, a creative digital marketing agency. Built using HTML, CSS, and JavaScript, it features visually appealing animations and a clean design to showcase the agency's services.",
-      image: webverLogo,
-      tags: ["HTML", "CSS", "JavaScript", "Framer Motion"],
-      github: "https://github.com/codingmastr/Webverse-Digital",
-      webapp: "https://webversedigital.com/",
-    },
-    {
-      id: 6,
-      title: "Coding Master",
-      description:
-        "An ed-tech platform where users can access tech and coding-related blogs, notes, interview questions, e-books, and premium content with payment integration. Built with full-stack technologies for a seamless learning experience.",
-      image: cmLogo,
-      tags: ["React JS", "Node.js", "MongoDB", "Express", "Payment Integration"],
-      github: "https://codingmasterweb.in/",
-      webapp: "https://codingmasterweb.in/",
-    },
-    {
-      id: 7,
-      title: "Image Search App",
-      description:
-        "A React.js-based image search application that allows users to search and download high-quality images from the web. Built using external APIs to ensure a vast library of results for various queries.",
-      image: imagesearchLogo,
-      tags: ["React JS", "API", "Search Feature", "CSS", "Javascript"],
-      github: "https://github.com/codingmastr/Image-Search-App",
-      webapp: "https://imagsearch.netlify.app/",
-    },
-    {
-      id: 8,
-      title: "Image Background Remover",
-      description:
-        "An efficient background removal app built with React.js and API integration. Users can upload any image, remove the background, and download the transparent version for further use.",
-      image: removebgLogo,
-      tags: ["React JS", "API", "Image Processing", "HTML", "CSS", "Javascript"],
-      github: "https://github.com/codingmastr/Image-Background-Remover",
-      webapp: "https://removeyourbg.netlify.app/",
-    },
-  ];  
+export const experiences = [
+  {
+    id: 0,
+    img: CognyxLogo,
+    role: "AI Engineer ApprenticeShip",
+    company: "Cognyx AI",
+    date: "August 2024 - Present",
+    desc: "Working as an AI Engineer Apprentice at Cognyx AI, focusing on core AI/ML concepts. Gained strong foundations in probability, statistics, linear algebra, and calculus. Trained in supervised, unsupervised, deep, and reinforcement learning through Stanford/DeepLearning.AI courses. Currently exploring NLP, LLMs, and Generative AI with real-world project exposure.",
+    skills: [
+      "Python",
+      "NumPy",
+      "Pandas",
+      "Matplotlib",
+      "Scikit-learn",
+      "TensorFlow",
+      "Keras",
+      "Reinforcement Learning",
+      "Deep Learning",
+      "NLP",
+      "LLMs",
+      "Generative AI",
+      "Probability & Statistics",
+      "Linear Algebra",
+      "Calculus",
+      "Machine Learning",
+      "Neural Networks"
+    ],
+  },
+  {
+    id: 1,
+    img: CognyxLogo,
+    role: "Manual Tester",
+    company: "Cognyx AI",
+    date: "August 2024 - November 2024",
+    desc: "Worked as a Manual QA Tester Intern at Cognyx AI for 4 months, testing real-time web applications to identify bugs, UI/UX issues, and functional errors. Created detailed test cases, performed regression and exploratory testing, and collaborated with developers to ensure product quality across multiple live client projects.",
+    skills: [
+      "Manual Testing",
+      "Regression Testing",
+      "Test Case Design",
+      "Bug Reporting",
+      "JIRA",
+      "Postman",
+      "UI/UX Testing",
+      "Cross-Browser Testing",
+      "Communication",
+      "Team Collaboration"
+    ],
+  },
+  {
+    id: 2,
+    img: CognyxLogo,
+    role: "MERN Stack And NEXTJS ApprenticeShip",
+    company: "Cognyx AI",
+    date: "November 2023 - August 2024",
+    desc: "Completed a full-stack Web Development Apprenticeship at Cognyx AI, mastering the MERN stack and building 8+ real-world projects (available on GitHub). Progressed to advanced concepts with Next.js, gaining hands-on experience in modern web architecture, server-side rendering, API integration, and deployment using the latest industry tools and practices.",
+    skills: [
+      "ReactJS",
+      "Redux",
+      "NEXT JS",
+      "JavaScript",
+      "TypeScript",
+      "Tailwind CSS",
+      "JWT",
+      "Express JS",
+      "NodeJS",
+      "MongoDB",
+    ],
+  },
+  {
+    id: 3,
+    img: CreArtLogo,
+    role: "FullStack Intern",
+    company: "CreArt",
+    date: "August 2022 - June 2023",
+    desc: "Worked as a Web Developer Intern, building HiFix System — a Django-based web app that bridges the gap between users and local service providers (electricians, plumbers, etc.). Enabled users to post service needs by location and category, while workers could apply, with selection based on reviews, budget, and proximity.",
+    skills: [
+      "HTML",
+      "CSS",
+      "Javascript",
+      "Bootstrap",
+      "Python",
+      "Django",
+      "MySQL",
+    ],
+  },
+];
+
+export const education = [
+  {
+    id: 0,
+    img: AITLogo,
+    school: "Ahmedabad Institute of Technology, Ahmedabad",
+    date: "Sept 2023 - May 2026",
+    grade: "8.52 CGPA",
+    desc: "I am doing my Bechlors's degree (BE) in Information Technology from AIT University Affiliated with GTU, Ahmedabad. During my time at AIT, I gained a strong foundation in programming, software development, and computer science principles. I have studied courses such as Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Web Development, and Software Engineering. I actively participated in various workshops and technical events, which enhanced my skills and knowledge. My experience at AIT (GTU) University has been instrumental in shaping my technical abilities and professional growth.",
+    degree: "Bechlors in IT Engineering - BE (Information Technology)",
+  },
+  {
+    id: 1,
+    img: KSELogo,
+    school: "Khyati School of Engineering, Ahmedabad",
+    date: "Sept 2020 - Aug 2023",
+    grade: "8.81 CPI",
+    desc: "I completed my polytechnical Diploma's degree in Information Technology (DEPL - IT) from Khyati College Affiliated with GTU, Ahmedabad. Throughout my studies, I was immersed in a variety of subjects that deepened my understanding of computing and technology. From exploring Data Structures and Algorithms to diving into Web Development and Database Management Systems, I gained practical insights into the world of software development. My time at BSA College allowed me to work on projects that applied theoretical concepts to real-world problems.",
+    degree: "Diploma in IT Engineering - DIPL (Information Technology)",
+  }
+];
+
+export const projects = [
+  {
+    id: 0,
+    title: "GitHub Profile Detective",
+    description:
+      "A powerful and user-friendly React.js application designed to uncover and showcase detailed GitHub profile information. Simply enter a GitHub username, and the app fetches comprehensive data, including profile stats, repositories, followers, and contributions. The intuitive interface ensures a seamless experience, making it a must-visit tool for developers and recruiters.",
+    image: githubdetLogo,
+    tags: ["HTML", "CSS", "JavaScript", "React JS", "API"],
+    github: "https://github.com/codingmastr/GitHub-Profile-Search-App-Using-React-JS",
+    webapp: "https://githubprofiledetective.netlify.app/",
+  },
+  {
+    id: 1,
+    title: "CS Prep",
+    description:
+      "A full-stack quiz-based platform designed for GATE/UGC NET students to practice previous year questions and create customized tests. The platform offers comprehensive profile stats and detailed results, helping students track and improve their preparation journey effectively.",
+    image: csprepLogo,
+    tags: ["React JS", "Node.js", "MongoDB", "Express", "HTML", "CSS", "JavaScript"],
+    github: "https://github.com/codingmastr/CSPrep",
+    webapp: "https://csprep.netlify.app/",
+  },
+  {
+    id: 2,
+    title: "Movie Recommendation App",
+    description:
+      "A React-based web application that provides movie recommendations based on different criteria, such as genres, user preferences, and popular trends. The intuitive design and smooth experience make it a go-to app for movie enthusiasts.",
+    image: movierecLogo,
+    tags: ["React JS", "API", "HTML", "CSS", "JavaScript"],
+    github: "https://github.com/codingmastr/Movie-Recommendation-App",
+    webapp: "https://movie-recommendation-app-jet.vercel.app/",
+  },
+  {
+    id: 3,
+    title: "Email Validator NPM Package",
+    description:
+      "An efficient and customizable NPM package for validating email addresses. Built using React.js and Node.js, it provides robust validation features to help developers ensure that email inputs meet required formats and standards.",
+    image: npmLogo,
+    tags: ["React JS", "Node.js", "NPM", "Validation"],
+    github: "https://github.com/codingmastr/cmtk-email-validator",
+    webapp: "https://www.npmjs.com/package/cmtk-email-validator",
+  },
+  {
+    id: 4,
+    title: "Task Reminder Chrome Extension Tool",
+    description:
+      "A productivity-boosting Chrome extension designed to help users manage and remember their daily tasks. Built using JavaScript, it offers a simple interface with reminders and task notifications to keep users on track.",
+    image: taskremLogo,
+    tags: ["JavaScript", "Chrome Extension", "HTML", "CSS"],
+    github: "https://github.com/codingmastr/Task-Reminder-Tool",
+    webapp: "chrome://extensions/?id=kngheeibjnnidhfoomkpnbeghackheci",
+  },
+  {
+    id: 5,
+    title: "Webverse Digital",
+    description:
+      "The official website for Webverse Digital, a creative digital marketing agency. Built using HTML, CSS, and JavaScript, it features visually appealing animations and a clean design to showcase the agency's services.",
+    image: webverLogo,
+    tags: ["HTML", "CSS", "JavaScript", "Framer Motion"],
+    github: "https://github.com/codingmastr/Webverse-Digital",
+    webapp: "https://webversedigital.com/",
+  },
+  {
+    id: 6,
+    title: "Coding Master",
+    description:
+      "An ed-tech platform where users can access tech and coding-related blogs, notes, interview questions, e-books, and premium content with payment integration. Built with full-stack technologies for a seamless learning experience.",
+    image: cmLogo,
+    tags: ["React JS", "Node.js", "MongoDB", "Express", "Payment Integration"],
+    github: "https://codingmasterweb.in/",
+    webapp: "https://codingmasterweb.in/",
+  },
+  {
+    id: 7,
+    title: "Image Search App",
+    description:
+      "A React.js-based image search application that allows users to search and download high-quality images from the web. Built using external APIs to ensure a vast library of results for various queries.",
+    image: imagesearchLogo,
+    tags: ["React JS", "API", "Search Feature", "CSS", "Javascript"],
+    github: "https://github.com/codingmastr/Image-Search-App",
+    webapp: "https://imagsearch.netlify.app/",
+  },
+  {
+    id: 8,
+    title: "Image Background Remover",
+    description:
+      "An efficient background removal app built with React.js and API integration. Users can upload any image, remove the background, and download the transparent version for further use.",
+    image: removebgLogo,
+    tags: ["React JS", "API", "Image Processing", "HTML", "CSS", "Javascript"],
+    github: "https://github.com/codingmastr/Image-Background-Remover",
+    webapp: "https://removeyourbg.netlify.app/",
+  },
+];  
