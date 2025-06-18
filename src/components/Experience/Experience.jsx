@@ -5,7 +5,7 @@ const Experience = () => {
   return (
     <section
       id="experience"
-      className="py-24 pb-24 px-[12vw] md:px-[7vw] lg:px-[16vw] font-sans bg-skills-gradient clip-path-custom-2"
+      className="py-24 px-[12vw] md:px-[7vw] lg:px-[16vw] font-sans bg-skills-gradient clip-path-custom-2"
     >
       {/* Section Title */}
       <div className="text-center mb-16">
@@ -18,9 +18,12 @@ const Experience = () => {
       </div>
 
       {/* Experience Timeline */}
-      <div className="relative">
-        {/* Vertical line */}
-        <div className="absolute left-6 sm:left-1/2 transform sm:-translate-x-1/2 w-1 bg-white h-full"></div>
+      <div className="relative pb-32 sm:pb-40">
+        {/* Vertical Line for Desktop */}
+        <div className="hidden sm:block absolute left-1/2 top-0 h-[95%] w-[2px] bg-white -translate-x-1/2 z-0" />
+
+        {/* Vertical Line for Mobile */}
+        <div className="sm:hidden absolute left-[32px] top-0 h-[95%] w-[2px] bg-white z-0" />
 
         {/* Experience Entries */}
         {experiences.map((experience, index) => (
@@ -43,7 +46,7 @@ const Experience = () => {
 
             {/* Content Section */}
             <div
-              className={`w-full sm:max-w-md p-4 sm:p-8 rounded-2xl shadow-2xl border border-white bg-gray-900 backdrop-blur-md shadow-[0_0_20px_1px_rgba(130,69,236,0.3)] transform transition-transform duration-300 hover:scale-105 ${
+              className={`w-full sm:max-w-md p-4 sm:p-8 rounded-2xl border border-white bg-gray-900 backdrop-blur-md shadow-[0_0_20px_1px_rgba(130,69,236,0.3)] transform transition-transform duration-300 hover:scale-105 ${
                 index % 2 === 0
                   ? "sm:ml-44 ml-20 sm:mr-0"
                   : "sm:mr-44 ml-20 sm:ml-0"
@@ -70,7 +73,9 @@ const Experience = () => {
                       {experience.company}
                     </h4>
                   </div>
-                  <p className="text-sm text-gray-500 mt-2">{experience.date}</p>
+                  <p className="text-sm text-gray-500 mt-2">
+                    {experience.date}
+                  </p>
                 </div>
               </div>
 
