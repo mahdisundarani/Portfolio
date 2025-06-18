@@ -224,7 +224,7 @@ export const education = [
     school: "Khyati School of Engineering, Ahmedabad",
     date: "Sept 2020 - Aug 2023",
     grade: "8.81 CPI",
-    desc: "I completed my polytechnical Diploma's degree in Information Technology (DEPL - IT) from Khyati College Affiliated with GTU, Ahmedabad. Throughout my studies, I was immersed in a variety of subjects that deepened my understanding of computing and technology. From exploring Data Structures and Algorithms to diving into Web Development and Database Management Systems, I gained practical insights into the world of software development. My time at BSA College allowed me to work on projects that applied theoretical concepts to real-world problems.",
+    desc: "I completed my polytechnical Diploma's degree in Information Technology (DEPL - IT) from Khyati College Affiliated with GTU, Ahmedabad. Throughout my studies, I was immersed in a variety of subjects that deepened my understanding of computing and technology. From exploring Data Structures and Algorithms to diving into Web Development and Database Management Systems, I gained practical insights into the world of software development. My time at khyati College allowed me to work on projects that applied theoretical concepts to real-world problems.",
     degree: "Diploma in IT Engineering - DIPL (Information Technology)",
   }
 ];
