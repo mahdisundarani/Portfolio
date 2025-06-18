@@ -4,11 +4,12 @@ import About from "./components/About/About";
 import Skills from "./components/Skills/Skills";
 import Experience from "./components/Experience/Experience";
 import Work from "./components/Work/Work";
-import AI_project from "./components/Work/AI_projects";
+import AI_projects from "./components/Work/AI_projects";
 import Education from "./components/Education/Education";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import BlurBlob from './components/BlurBlob';
+
 
 const App = () => {
   return (
@@ -23,7 +24,7 @@ const App = () => {
         <About />
         <Skills />
         <Experience />
-        <AI_project />
+        <AI_projects />
         <Work />
         <Education />
         <Contact />

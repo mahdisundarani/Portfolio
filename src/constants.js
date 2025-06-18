@@ -345,3 +345,23 @@ export const projects = [
     webapp: "https://amazon-clone-eta-one.vercel.app/",
   }
 ];  
+
+export const aiProjects = [
+  {   
+    id: 0,
+    title: "Amazon Clone",
+    description:
+      "This project replicates the structure, layout, and design of the original Amazon website homepage to showcase fundamental front-end development skills. Focused on responsiveness, clean layout, and accurate styling — without using any JavaScript or frameworks.",
+    image: Amazon_clone,
+    tags: [
+      "HTML",
+      "CSS",
+      "Responsive Design",
+      "Front-End Development",
+      "Web Design"
+    ]
+    ,
+    github: "https://github.com/mahdisundarani/Amazon-clone.git",
+    webapp: "https://amazon-clone-eta-one.vercel.app/",
+  }
+];
