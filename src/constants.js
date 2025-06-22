@@ -47,7 +47,7 @@ import vpsLogo from './assets/education_logo/vps_logo.png';
 import KSELogo from './assets/education_logo/KSE_logo.png';
 import AITLogo from './assets/education_logo/AIT_logo.png';
 
-// Project Section Logo's
+// WebSite Project Section Logo's
 import githubdetLogo from './assets/work_logo/github_det.png';
 import csprepLogo from './assets/work_logo/cs_prep.png';
 import movierecLogo from './assets/work_logo/movie_rec.png';
@@ -62,6 +62,13 @@ import INoteBook from './assets/work_logo/INoteBook.png';
 import DataFinance from './assets/work_logo/DataFinance.png';
 import Yelp_Camp from './assets/work_logo/Yelp_Camp.png';
 import Amazon_clone from './assets/work_logo/Amazon_clone.png';
+
+// AI Project Section Logo's
+import Linear_regression from './assets/work_logo/Linear_regression.png';
+import Logistic_regression from './assets/work_logo/Logistic_regression.png';
+import Decision_tree from './assets/work_logo/Decision_tree.png';
+import NN from './assets/work_logo/NN.png';
+import Kmeans from './assets/work_logo/k-means.png';
 
 
 export const SkillsInfo = [
@@ -344,24 +351,134 @@ export const projects = [
     github: "https://github.com/mahdisundarani/Amazon-clone.git",
     webapp: "https://amazon-clone-eta-one.vercel.app/",
   }
-];  
+];
 
 export const aiProjects = [
-  {   
+  {
     id: 0,
-    title: "Amazon Clone",
+    title: "Linear Regression",
     description:
-      "This project replicates the structure, layout, and design of the original Amazon website homepage to showcase fundamental front-end development skills. Focused on responsiveness, clean layout, and accurate styling — without using any JavaScript or frameworks.",
-    image: Amazon_clone,
+      "Built and compared simple and multiple linear regression models to predict students' placement packages (LPA) using academic and skill-based features.In the simple model, CGPA was used to predict Package (LPA), while the multiple regression model included features like internship experience, number of projects, and coding skills. Developed using Python and scikit-learn, with interactive visualizations created using Plotly, alongside Matplotlib and Seaborn. The project explores how individual and combined academic and technical factors influence placement outcomes, offering insights into real-world career prediction.",
+    image: Linear_regression,
     tags: [
-      "HTML",
-      "CSS",
-      "Responsive Design",
-      "Front-End Development",
-      "Web Design"
+      "Python",
+      "Pandas",
+      "NumPy",
+      "Matplotlib",
+      "Seaborn",
+      "Plotly",
+      "Scikit-learn",
+      "Simple Linear Regression",
+      "Multiple Linear Regression",
+      "Machine Learning",
+      "Supervised Learning",
+      "Data Visualization",
+      "Model Evaluation",
+      "Career Prediction"
     ]
     ,
-    github: "https://github.com/mahdisundarani/Amazon-clone.git",
-    webapp: "https://amazon-clone-eta-one.vercel.app/",
+    github: "https://drive.google.com/drive/folders/1KUP5pMdC0Fx4txf56NDctxwtPbmRSulX?usp=drive_link ",
+    webapp: "https://drive.google.com/drive/folders/1KUP5pMdC0Fx4txf56NDctxwtPbmRSulX?usp=drive_link",
+  },
+  {
+    id: 1,
+    title: "Logistic Regression",
+    description:
+      "Implemented logistic and softmax regression models for classification tasks using the classic Iris dataset.Applied binary logistic regression to classify between two Iris species and extended it to multiclass classification using softmax regression for all three species. Developed using Python and scikit-learn, and visualized decision boundaries and data distributions with Matplotlib, Seaborn, and Plotly. This project demonstrates how logistic regression models can be applied to real-world datasets for both binary and multiclass prediction tasks.",
+    image: Logistic_regression,
+    tags: [
+      "Python",
+      "Pandas",
+      "NumPy",
+      "Scikit-learn",
+      "Logistic Regression",
+      "Softmax Regression",
+      "Binary Classification",
+      "Multiclass Classification",
+      "Machine Learning",
+      "Supervised Learning",
+      "Matplotlib",
+      "Seaborn",
+      "Plotly",
+      "Model Evaluation"
+    ]
+    ,
+    github: "https://drive.google.com/drive/folders/1USY3y_eq1vXRPJy3toPZVilUSjGNNl0m?usp=drive_link ",
+    webapp: "https://drive.google.com/drive/folders/1USY3y_eq1vXRPJy3toPZVilUSjGNNl0m?usp=drive_link",
+  },
+  {
+    id: 2,
+    title: "Decision Tree",
+    description:
+      "Built a decision tree classifier to perform multiclass classification using the Iris dataset.Used scikit-learn to train a decision tree model that classifies Iris flower species based on features like petal and sepal length/width. Visualized the tree structure and decision boundaries using Matplotlib, Seaborn, and Plotly for intuitive interpretation. Demonstrated model interpretability and performance evaluation with real-world, labeled data.",
+    image: Decision_tree,
+    tags: [
+      "Python",
+      "Scikit-learn",
+      "Decision Tree",
+      "Iris Dataset",
+      "Multiclass Classification",
+      "Machine Learning",
+      "Supervised Learning",
+      "Matplotlib",
+      "Seaborn",
+      "Plotly",
+      "Data Visualization",
+      "Model Evaluation"
+    ]
+    ,
+    github: "https://drive.google.com/drive/folders/1J2OqHQ0BTcq2aCv83P5YApbpawRtTYG5?usp=sharing",
+    webapp: "https://drive.google.com/drive/folders/1J2OqHQ0BTcq2aCv83P5YApbpawRtTYG5?usp=sharing",
+  },
+  {
+    id: 3,
+    title: "Neural Network",
+    description:
+      "Built a basic image classification model using a Feedforward Neural Network (FNN) with TensorFlow and Keras.Developed a Multilayer Perceptron (MLP) model to classify clothing items in the Fashion MNIST dataset. The architecture included a Flatten input layer, a dense hidden layer with ReLU, and a softmax output layer for 10 classes. Trained the model using sparse categorical cross-entropy and the Adam optimizer. Visualized predictions and accuracy, demonstrating foundational understanding of neural networks.",
+    image: NN,
+    tags: [
+      "Python",
+      "TensorFlow",
+      "Keras",
+      "Neural Network",
+      "Feedforward Neural Network",
+      "Multilayer Perceptron",
+      "Fashion MNIST",
+      "Image Classification",
+      "Deep Learning",
+      "Supervised Learning",
+      "ReLU",
+      "Softmax",
+      "Adam Optimizer",
+      "Model Evaluation"
+    ]
+    ,
+    github: "https://drive.google.com/drive/folders/1nUQJJc5VGDc5r-hupT9kCwaFUfILr6rV?usp=sharing",
+    webapp: "https://drive.google.com/drive/folders/1nUQJJc5VGDc5r-hupT9kCwaFUfILr6rV?usp=sharing",
+  },
+  {
+    id: 4,
+    title: "K-Means",
+    description:
+      "Applied unsupervised learning with K-Means to discover patterns in both real and synthetic datasets using 2D and 3D clustering.Performed K-Means Clustering on a real-world student dataset (cgpa, iq) and synthetic 3D data generated using make_blobs. Used the Elbow Method to determine the optimal number of clusters (K=4). Visualized 2D clusters with Matplotlib and 3D clusters with Plotly, demonstrating insights into group formations based on similarity. This project highlighted the power of clustering in both real-world and simulated data environments.",
+    image: Kmeans,
+    tags: [
+      "Python",
+      "Scikit-learn",
+      "K-Means Clustering",
+      "Unsupervised Learning",
+      "Elbow Method",
+      "2D Clustering",
+      "3D Clustering",
+      "Matplotlib",
+      "Plotly",
+      "make_blobs",
+      "Data Visualization",
+      "Synthetic Data",
+      "Real-World Dataset"
+    ]
+    ,
+    github: "https://drive.google.com/drive/folders/13lqiZqA0K6HtVDdbpQio3N6wuU1xDG9-?usp=sharing",
+    webapp: "https://drive.google.com/drive/folders/13lqiZqA0K6HtVDdbpQio3N6wuU1xDG9-?usp=sharing",
   }
 ];
