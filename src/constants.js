@@ -32,6 +32,16 @@ import netlifyLogo from './assets/tech_logo/netlify.png';
 import vercelLogo from './assets/tech_logo/vercel.png';
 import postgreLogo from './assets/tech_logo/postgre.png';
 import csharpLogo from './assets/tech_logo/csharp.png';
+import Django from './assets/tech_logo/django.png';
+
+import NumPy from './assets/tech_logo/numpy.png';
+import Pandas from './assets/tech_logo/pandas.png';
+import Plotly from './assets/tech_logo/plotly.png';
+import Keras from './assets/tech_logo/Keras.png';
+import matplotlib from './assets/tech_logo/matplotlib.png';
+import pytorch from './assets/tech_logo/pytorch.png';
+import tensorflow from './assets/tech_logo/tensorflow.png';
+import Sklearn from './assets/tech_logo/scikit-learn.png';
 
 // Experience Section Logo's
 import webverseLogo from './assets/company_logo/webverse_logo.png';
@@ -79,12 +89,13 @@ export const SkillsInfo = [
       { name: 'CSS', logo: cssLogo },
       { name: 'SASS', logo: sassLogo },
       { name: 'JavaScript', logo: javascriptLogo },
+      { name: 'typescript', logo: typescriptLogo },
       { name: 'React JS', logo: reactjsLogo },
       { name: 'Angular', logo: angularLogo },
       { name: 'Redux', logo: reduxLogo },
       { name: 'Next JS', logo: nextjsLogo },
       { name: 'Tailwind CSS', logo: tailwindcssLogo },
-      { name: 'GSAP', logo: gsapLogo },
+      // { name: 'GSAP', logo: gsapLogo },
       { name: 'Material UI', logo: materialuiLogo },
       { name: 'Bootstrap', logo: bootstrapLogo },
     ],
@@ -92,25 +103,27 @@ export const SkillsInfo = [
   {
     title: 'Backend',
     skills: [
-      { name: 'Springboot', logo: springbootLogo },
+      // { name: 'Springboot', logo: springbootLogo },
       { name: 'Node JS', logo: nodejsLogo },
       { name: 'Express JS', logo: expressjsLogo },
       { name: 'MySQL', logo: mysqlLogo },
       { name: 'MongoDB', logo: mongodbLogo },
       { name: 'Firebase', logo: firebaseLogo },
       { name: 'PostgreSQL', logo: postgreLogo },
+      { name: 'Django', logo: Django },
     ],
   },
   {
-    title: 'Languages',
+    title: 'Machine Learning',
     skills: [
-      { name: 'C', logo: cLogo },
-      { name: 'C++', logo: cppLogo },
-      { name: 'Java', logo: javaLogo },
-      { name: 'Python', logo: pythonLogo },
-      { name: 'C-Sharp', logo: csharpLogo },
-      { name: 'JavaScript', logo: javascriptLogo },
-      { name: 'TypeScript', logo: typescriptLogo },
+      { name: 'Numpy', logo: NumPy },
+      { name: 'Pandas', logo: Pandas },
+      { name: 'Matplotlib', logo: matplotlib },
+      { name: 'Keras', logo: Keras },
+      { name: 'TesorFlow', logo: tensorflow },
+      { name: 'Plotly', logo: Plotly },
+      { name: 'Pytorch', logo: pytorch },
+      { name: 'Scikit-Learn', logo: Sklearn },
     ],
   },
   {
