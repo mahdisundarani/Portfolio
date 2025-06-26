@@ -72,6 +72,7 @@ import INoteBook from './assets/work_logo/INoteBook.png';
 import DataFinance from './assets/work_logo/DataFinance.png';
 import Yelp_Camp from './assets/work_logo/Yelp_Camp.png';
 import Amazon_clone from './assets/work_logo/Amazon_clone.png';
+import Textutils from './assets/work_logo/Textutils.png';
 
 // AI Project Section Logo's
 import Linear_regression from './assets/work_logo/Linear_regression.png';
@@ -90,7 +91,7 @@ export const SkillsInfo = [
       { name: 'SASS', logo: sassLogo },
       { name: 'JavaScript', logo: javascriptLogo },
       { name: 'typescript', logo: typescriptLogo },
-      { name: 'React JS', logo: reactjsLogo },
+      { name: 'ReactJS', logo: reactjsLogo },
       { name: 'Angular', logo: angularLogo },
       { name: 'Redux', logo: reduxLogo },
       { name: 'Next JS', logo: nextjsLogo },
@@ -349,6 +350,26 @@ export const projects = [
   },
   {
     id: 4,
+    title: "Text Utils",
+    description:
+      "A React.js-based text utility tool that provides real-time text transformations such as uppercase, lowercase, removing extra spaces, clearing text, and copying text to clipboard. The project features a clean, responsive UI built with Bootstrap and supports dynamic light/dark mode toggling using React state. User-friendly alerts enhance UX, and routing is handled with React Router for seamless navigation between Home and About pages. Built with modular components for easy scalability and maintainability.",
+    image: Textutils,
+    tags: [
+      "React JS",
+      "React Router",
+      "Bootstrap 5",
+      "Dark Mode",
+      "JavaScript",
+      "Responsive Design",
+      "Web Development",
+      "UI/UX"
+    ]
+    ,
+    github: "https://github.com/mahdisundarani/text-utils.git",
+    webapp: "https://text-utils-iota-indol.vercel.app/",
+  },
+  {
+    id: 5,
     title: "Amazon Clone",
     description:
       "This project replicates the structure, layout, and design of the original Amazon website homepage to showcase fundamental front-end development skills. Focused on responsiveness, clean layout, and accurate styling — without using any JavaScript or frameworks.",
@@ -391,7 +412,7 @@ export const aiProjects = [
     ]
     ,
     github: "https://drive.google.com/drive/folders/1KUP5pMdC0Fx4txf56NDctxwtPbmRSulX?usp=drive_link ",
-    webapp: "https://drive.google.com/drive/folders/1KUP5pMdC0Fx4txf56NDctxwtPbmRSulX?usp=drive_link",
+    // webapp: "https://drive.google.com/drive/folders/1KUP5pMdC0Fx4txf56NDctxwtPbmRSulX?usp=drive_link",
   },
   {
     id: 1,
@@ -417,7 +438,7 @@ export const aiProjects = [
     ]
     ,
     github: "https://drive.google.com/drive/folders/1USY3y_eq1vXRPJy3toPZVilUSjGNNl0m?usp=drive_link ",
-    webapp: "https://drive.google.com/drive/folders/1USY3y_eq1vXRPJy3toPZVilUSjGNNl0m?usp=drive_link",
+    // webapp: "https://drive.google.com/drive/folders/1USY3y_eq1vXRPJy3toPZVilUSjGNNl0m?usp=drive_link",
   },
   {
     id: 2,
@@ -441,7 +462,7 @@ export const aiProjects = [
     ]
     ,
     github: "https://drive.google.com/drive/folders/1J2OqHQ0BTcq2aCv83P5YApbpawRtTYG5?usp=sharing",
-    webapp: "https://drive.google.com/drive/folders/1J2OqHQ0BTcq2aCv83P5YApbpawRtTYG5?usp=sharing",
+    // webapp: "https://drive.google.com/drive/folders/1J2OqHQ0BTcq2aCv83P5YApbpawRtTYG5?usp=sharing",
   },
   {
     id: 3,
@@ -467,7 +488,7 @@ export const aiProjects = [
     ]
     ,
     github: "https://drive.google.com/drive/folders/1nUQJJc5VGDc5r-hupT9kCwaFUfILr6rV?usp=sharing",
-    webapp: "https://drive.google.com/drive/folders/1nUQJJc5VGDc5r-hupT9kCwaFUfILr6rV?usp=sharing",
+    // webapp: "https://drive.google.com/drive/folders/1nUQJJc5VGDc5r-hupT9kCwaFUfILr6rV?usp=sharing",
   },
   {
     id: 4,
@@ -492,6 +513,6 @@ export const aiProjects = [
     ]
     ,
     github: "https://drive.google.com/drive/folders/13lqiZqA0K6HtVDdbpQio3N6wuU1xDG9-?usp=sharing",
-    webapp: "https://drive.google.com/drive/folders/13lqiZqA0K6HtVDdbpQio3N6wuU1xDG9-?usp=sharing",
+    // webapp: "https://drive.google.com/drive/folders/13lqiZqA0K6HtVDdbpQio3N6wuU1xDG9-?usp=sharing",
   }
 ];
