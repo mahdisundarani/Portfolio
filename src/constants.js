@@ -79,7 +79,7 @@ import Linear_regression from './assets/work_logo/Linear_regression.png';
 import Logistic_regression from './assets/work_logo/Logistic_regression.png';
 import Decision_tree from './assets/work_logo/Decision_tree.png';
 import NN from './assets/work_logo/NN.png';
-import Kmeans from './assets/work_logo/k-means.png';
+import Kmeans from './assets/work_logo/K-means.png';
 
 
 export const SkillsInfo = [
