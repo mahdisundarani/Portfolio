@@ -40,7 +40,7 @@ const Education = () => {
 
               {/* Card */}
               <div
-                className={`p-6 rounded-2xl  border border-white bg-gray-900 backdrop-blur-md shadow-[0_0_20px_1px_rgba(130,69,236,0.3)] hover:scale-105 transition-transform duration-300 ${
+                className={`p-6 rounded-2xl  border border-white bg-gray-900 backdrop-blur-md hover:scale-105 transition-transform duration-300 ${
                   index % 2 === 0
                     ? "sm:col-start-6 sm:col-end-10"
                     : "sm:col-start-1 sm:col-end-5"
