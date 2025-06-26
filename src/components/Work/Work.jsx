@@ -35,13 +35,17 @@ const Work = () => {
             onClick={() => handleOpenModal(project)}
             className="border border-white bg-gray-900 backdrop-blur-md rounded-2xl shadow-2xl overflow-hidden cursor-pointer hover:shadow-purple-500/50 hover:-translate-y-2 transition-transform duration-300 flex flex-col"
           >
+            {/* Image with 16:9 Aspect Ratio */}
             <div className="p-4">
-              <img
-                src={project.image}
-                alt={project.title}
-                className="w-full h-48 object-cover rounded-xl"
-              />
+              <div className="aspect-[16/9] w-full overflow-hidden rounded-xl">
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="w-full h-full object-cover"
+                />
+              </div>
             </div>
+
             <div className="px-6 pb-6 flex flex-col flex-grow">
               <h3 className="text-2xl font-bold text-white mb-2">
                 {project.title}
