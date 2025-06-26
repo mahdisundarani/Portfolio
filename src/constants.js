@@ -236,7 +236,7 @@ export const education = [
     school: "Ahmedabad Institute of Technology, Ahmedabad",
     date: "Sept 2023 - May 2026",
     grade: "8.52 CGPA",
-    desc: "I am doing my Bechlors's degree (BE) in Information Technology from AIT University Affiliated with GTU, Ahmedabad. During my time at AIT, I gained a strong foundation in programming, software development, and computer science principles. I have studied courses such as Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Web Development, and Software Engineering. I actively participated in various workshops and technical events, which enhanced my skills and knowledge. My experience at AIT (GTU) University has been instrumental in shaping my technical abilities and professional growth.",
+    desc: "I am doing my Bechlors's degree (BE) in Information Technology from AIT College Affiliated with GTU, Ahmedabad. During my time at AIT, I gained a strong foundation in programming, software development, and computer science principles. I have studied courses such as Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Web Development, and Software Engineering. I actively participated in various workshops and technical events, which enhanced my skills and knowledge. My experience at AIT (GTU) University has been instrumental in shaping my technical abilities and professional growth.",
     degree: "Bechlors in IT Engineering - BE (Information Technology)",
   },
   {

@@ -33,7 +33,7 @@ const Work = () => {
           <div
             key={project.id}
             onClick={() => handleOpenModal(project)}
-            className="border border-white bg-gray-900 backdrop-blur-md rounded-2xl shadow-2xl overflow-hidden cursor-pointer hover:shadow-purple-500/50 hover:-translate-y-2 transition-transform duration-300"
+            className="border border-white bg-gray-900 backdrop-blur-md rounded-2xl shadow-2xl overflow-hidden cursor-pointer hover:shadow-purple-500/50 hover:-translate-y-2 transition-transform duration-300 flex flex-col"
           >
             <div className="p-4">
               <img
@@ -42,22 +42,33 @@ const Work = () => {
                 className="w-full h-48 object-cover rounded-xl"
               />
             </div>
-            <div className="p-6">
+            <div className="px-6 pb-6 flex flex-col flex-grow">
               <h3 className="text-2xl font-bold text-white mb-2">
                 {project.title}
               </h3>
               <p className="text-gray-500 mb-4 pt-4 line-clamp-3">
                 {project.description}
               </p>
-              <div className="mb-4">
-                {project.tags.map((tag, index) => (
-                  <span
-                    key={index}
-                    className="inline-block bg-[#251f38] text-xs font-semibold text-purple-500 rounded-full px-2 py-1 mr-2 mb-2"
-                  >
-                    {tag}
-                  </span>
-                ))}
+
+              {/* Truncated Tags */}
+              <div className="mb-4 min-h-[48px]">
+                <div className="line-clamp-2 overflow-hidden text-ellipsis text-xs font-semibold text-purple-500">
+                  {project.tags.map((tag, index) => (
+                    <span
+                      key={index}
+                      className="bg-[#251f38] inline-block rounded-full px-2 py-1 mr-2 mb-2"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              </div>
+
+              {/* View Details Button */}
+              <div className="mt-auto flex justify-center">
+                <button className="bg-purple-600 hover:bg-purple-700 text-white text-sm font-semibold py-2 px-4 rounded-lg shadow-md">
+                  View Details
+                </button>
               </div>
             </div>
           </div>
