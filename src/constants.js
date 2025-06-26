@@ -72,7 +72,7 @@ import INoteBook from './assets/work_logo/INoteBook.png';
 import DataFinance from './assets/work_logo/DataFinance.png';
 import Yelp_Camp from './assets/work_logo/Yelp_Camp.png';
 import Amazon_clone from './assets/work_logo/Amazon_clone.png';
-import Textutils from './assets/work_logo/Textutils.png';
+import Textutils from './assets/work_logo/TextUtils.png';
 
 // AI Project Section Logo's
 import Linear_regression from './assets/work_logo/Linear_regression.png';
