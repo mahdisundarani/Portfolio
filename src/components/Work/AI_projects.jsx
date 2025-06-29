@@ -62,7 +62,7 @@ const AIProjects = () => {
               <h3 className="text-2xl font-bold text-white mb-2">{project.title}</h3>
               <p className="text-gray-500 mb-4 pt-4 line-clamp-3">{project.description}</p>
 
-              {/* Tags with truncation */}
+              {/* Tags */}
               <div className="mb-4 min-h-[48px]">
                 <div className="line-clamp-2 overflow-hidden text-ellipsis text-xs font-semibold text-purple-500">
                   {project.tags.map((tag, index) => (
@@ -133,38 +133,32 @@ const AIProjects = () => {
                   ))}
                 </div>
 
-                {/* Conditionally Render Buttons */}
-                {selectedProject.webapp ? (
-                  <div className="flex gap-4">
+                {/* Only two buttons: View Code and Maths Notes */}
+                <div className="flex gap-4 justify-center">
+                  {/* View Code Button */}
+                  {selectedProject.github && (
                     <a
                       href={selectedProject.github}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="w-1/2 bg-gray-800 hover:bg-purple-800 text-gray-400 lg:px-6 lg:py-2 px-2 py-1 rounded-xl lg:text-xl text-sm font-semibold text-center"
+                      className="bg-gray-800 hover:bg-purple-800 text-gray-400 lg:px-6 lg:py-2 px-4 py-2 rounded-xl lg:text-xl text-sm font-semibold text-center w-1/2"
                     >
                       View Code
                     </a>
+                  )}
+
+                  {/* Maths Notes Button */}
+                  {selectedProject.notes && (
                     <a
-                      href={selectedProject.webapp}
+                      href={selectedProject.notes}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="w-1/2 bg-purple-600 hover:bg-purple-800 text-white lg:px-6 lg:py-2 px-2 py-1 rounded-xl lg:text-xl text-sm font-semibold text-center"
                     >
-                      View Live
+                      View Notes
                     </a>
-                  </div>
-                ) : (
-                  <div className="flex justify-center">
-                    <a
-                      href={selectedProject.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="bg-gray-800 hover:bg-purple-800 text-gray-400 lg:px-6 lg:py-2 px-4 py-2 rounded-xl lg:text-xl text-sm font-semibold text-center"
-                    >
-                      View Code
-                    </a>
-                  </div>
-                )}
+                  )}
+                </div>
               </div>
             </div>
           </div>

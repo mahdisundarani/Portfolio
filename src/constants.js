@@ -413,6 +413,7 @@ export const aiProjects = [
     ,
     github: "https://drive.google.com/drive/folders/1KUP5pMdC0Fx4txf56NDctxwtPbmRSulX?usp=drive_link ",
     // webapp: "https://drive.google.com/drive/folders/1KUP5pMdC0Fx4txf56NDctxwtPbmRSulX?usp=drive_link",
+    notes: "https://drive.google.com/file/d/1n_C4b0AL4bVaBfTSM94ysIrOaqkpjX4m/view?usp=drive_link",
   },
   {
     id: 1,
@@ -439,6 +440,7 @@ export const aiProjects = [
     ,
     github: "https://drive.google.com/drive/folders/1USY3y_eq1vXRPJy3toPZVilUSjGNNl0m?usp=drive_link ",
     // webapp: "https://drive.google.com/drive/folders/1USY3y_eq1vXRPJy3toPZVilUSjGNNl0m?usp=drive_link",
+    notes: "https://drive.google.com/file/d/1nfc1icVqgHcJljY5U4rTG5FdEMbpZtNR/view?usp=sharing",
   },
   {
     id: 2,
@@ -463,6 +465,7 @@ export const aiProjects = [
     ,
     github: "https://drive.google.com/drive/folders/1J2OqHQ0BTcq2aCv83P5YApbpawRtTYG5?usp=sharing",
     // webapp: "https://drive.google.com/drive/folders/1J2OqHQ0BTcq2aCv83P5YApbpawRtTYG5?usp=sharing",
+    notes: "https://drive.google.com/file/d/1ng-vhYK59RFWfWoyjQG8n-SFKVmDAKYe/view?usp=sharing",
   },
   {
     id: 3,
@@ -489,6 +492,7 @@ export const aiProjects = [
     ,
     github: "https://drive.google.com/drive/folders/1nUQJJc5VGDc5r-hupT9kCwaFUfILr6rV?usp=sharing",
     // webapp: "https://drive.google.com/drive/folders/1nUQJJc5VGDc5r-hupT9kCwaFUfILr6rV?usp=sharing",
+    notes: "https://drive.google.com/file/d/1nnW7yN84wqb18qua-ZTiInVb9iD2slV9/view?usp=sharing",
   },
   {
     id: 4,
