@@ -390,7 +390,7 @@ export const projects = [
 export const aiProjects = [
   {
     id: 0,
-    title: "Linear Regression",
+    title: "Placement Package Prediction using Linear Regression",
     description:
       "Built and compared simple and multiple linear regression models to predict students' placement packages (LPA) using academic and skill-based features.In the simple model, CGPA was used to predict Package (LPA), while the multiple regression model included features like internship experience, number of projects, and coding skills. Developed using Python and scikit-learn, with interactive visualizations created using Plotly, alongside Matplotlib and Seaborn. The project explores how individual and combined academic and technical factors influence placement outcomes, offering insights into real-world career prediction.",
     image: Linear_regression,
@@ -417,7 +417,7 @@ export const aiProjects = [
   },
   {
     id: 1,
-    title: "Logistic Regression",
+    title: "Iris Dataset classification with Logistic Regression",
     description:
       "Implemented logistic and softmax regression models for classification tasks using the classic Iris dataset.Applied binary logistic regression to classify between two Iris species and extended it to multiclass classification using softmax regression for all three species. Developed using Python and scikit-learn, and visualized decision boundaries and data distributions with Matplotlib, Seaborn, and Plotly. This project demonstrates how logistic regression models can be applied to real-world datasets for both binary and multiclass prediction tasks.",
     image: Logistic_regression,
@@ -444,7 +444,7 @@ export const aiProjects = [
   },
   {
     id: 2,
-    title: "Decision Tree",
+    title: "Decision Tree Classification on Iris Dataset",
     description:
       "Built a decision tree classifier to perform multiclass classification using the Iris dataset.Used scikit-learn to train a decision tree model that classifies Iris flower species based on features like petal and sepal length/width. Visualized the tree structure and decision boundaries using Matplotlib, Seaborn, and Plotly for intuitive interpretation. Demonstrated model interpretability and performance evaluation with real-world, labeled data.",
     image: Decision_tree,
@@ -469,7 +469,7 @@ export const aiProjects = [
   },
   {
     id: 3,
-    title: "Neural Network",
+    title: "Neural Network for Fashion MNIST Classification",
     description:
       "Built a basic image classification model using a Feedforward Neural Network (FNN) with TensorFlow and Keras.Developed a Multilayer Perceptron (MLP) model to classify clothing items in the Fashion MNIST dataset. The architecture included a Flatten input layer, a dense hidden layer with ReLU, and a softmax output layer for 10 classes. Trained the model using sparse categorical cross-entropy and the Adam optimizer. Visualized predictions and accuracy, demonstrating foundational understanding of neural networks.",
     image: NN,
@@ -496,7 +496,7 @@ export const aiProjects = [
   },
   {
     id: 4,
-    title: "K-Means",
+    title: "K-Means Clustering on Student and Synthetic Data",
     description:
       "Applied unsupervised learning with K-Means to discover patterns in both real and synthetic datasets using 2D and 3D clustering.Performed K-Means Clustering on a real-world student dataset (cgpa, iq) and synthetic 3D data generated using make_blobs. Used the Elbow Method to determine the optimal number of clusters (K=4). Visualized 2D clusters with Matplotlib and 3D clusters with Plotly, demonstrating insights into group formations based on similarity. This project highlighted the power of clustering in both real-world and simulated data environments.",
     image: Kmeans,
