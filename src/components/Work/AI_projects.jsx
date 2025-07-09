@@ -13,6 +13,7 @@ const AIProjects = () => {
     setSelectedProject(null);
   };
 
+  // Close modal on outside click
   useEffect(() => {
     const handleOutsideClick = (event) => {
       if (modalRef.current && !modalRef.current.contains(event.target)) {
@@ -26,6 +27,19 @@ const AIProjects = () => {
 
     return () => {
       document.removeEventListener("mousedown", handleOutsideClick);
+    };
+  }, [selectedProject]);
+
+  // Prevent background scroll when modal is open
+  useEffect(() => {
+    if (selectedProject) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+
+    return () => {
+      document.body.style.overflow = "auto";
     };
   }, [selectedProject]);
 
@@ -87,7 +101,7 @@ const AIProjects = () => {
         ))}
       </div>
 
-      {/* Modal Container */}
+      {/* Modal */}
       {selectedProject && (
         <div
           className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-90 p-4"
@@ -96,18 +110,18 @@ const AIProjects = () => {
           <div
             ref={modalRef}
             onClick={(e) => e.stopPropagation()}
-            className="bg-gray-900 rounded-xl shadow-2xl lg:w-full w-[90%] max-w-3xl relative max-h-[90vh] overflow-y-auto"
+            className="bg-gray-900 rounded-xl shadow-2xl lg:w-full w-[90%] max-w-3xl relative max-h-[90vh] overflow-hidden"
           >
-            <div className="flex justify-end p-4">
-              <button
-                onClick={handleCloseModal}
-                className="text-white text-3xl font-bold hover:text-purple-500"
-              >
-                &times;
-              </button>
-            </div>
+            {/* Fixed and Styled Close Button */}
+            <button
+              onClick={handleCloseModal}
+              className="absolute top-4 right-4 z-10 text-white text-3xl font-bold bg-purple-600 hover:bg-purple-800 shadow-lg rounded-full w-10 h-10 flex items-center justify-center"
+            >
+              &times;
+            </button>
 
-            <div className="flex flex-col">
+            {/* Scrollable Content */}
+            <div className="overflow-y-auto max-h-[90vh] p-4 pt-16">
               <div className="w-full flex justify-center bg-gray-900 px-4">
                 <img
                   src={selectedProject.image}
@@ -133,9 +147,8 @@ const AIProjects = () => {
                   ))}
                 </div>
 
-                {/* Only two buttons: View Code and Maths Notes */}
+                {/* Buttons */}
                 <div className="flex gap-4 justify-center">
-                  {/* View Code Button */}
                   {selectedProject.github && (
                     <a
                       href={selectedProject.github}
@@ -147,7 +160,6 @@ const AIProjects = () => {
                     </a>
                   )}
 
-                  {/* Maths Notes Button */}
                   {selectedProject.notes && (
                     <a
                       href={selectedProject.notes}

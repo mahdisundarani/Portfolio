@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { projects } from "../../constants";
 
 const Work = () => {
   const [selectedProject, setSelectedProject] = useState(null);
+  const modalRef = useRef(null);
 
   const handleOpenModal = (project) => {
     setSelectedProject(project);
@@ -11,6 +12,35 @@ const Work = () => {
   const handleCloseModal = () => {
     setSelectedProject(null);
   };
+
+  // Close modal on outside click
+  useEffect(() => {
+    const handleOutsideClick = (event) => {
+      if (modalRef.current && !modalRef.current.contains(event.target)) {
+        handleCloseModal();
+      }
+    };
+
+    if (selectedProject) {
+      document.addEventListener("mousedown", handleOutsideClick);
+    }
+
+    return () => {
+      document.removeEventListener("mousedown", handleOutsideClick);
+    };
+  }, [selectedProject]);
+
+  // Prevent background scroll when modal is open
+  useEffect(() => {
+    if (selectedProject) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [selectedProject]);
 
   return (
     <section
@@ -86,76 +116,79 @@ const Work = () => {
           onClick={handleCloseModal}
         >
           <div
-            className="bg-gray-900 rounded-xl shadow-2xl lg:w-full w-[90%] max-w-3xl relative max-h-[90vh] overflow-y-auto"
+            ref={modalRef}
             onClick={(e) => e.stopPropagation()}
+            className="bg-gray-900 rounded-xl shadow-2xl lg:w-full w-[90%] max-w-3xl relative max-h-[90vh] overflow-hidden"
           >
-            <div className="flex justify-end p-4">
-              <button
-                onClick={handleCloseModal}
-                className="text-white text-3xl font-bold hover:text-purple-500"
-              >
-                &times;
-              </button>
-            </div>
+            {/* Fixed and Styled Close Button */}
+            <button
+              onClick={handleCloseModal}
+              className="absolute top-4 right-4 z-10 text-white text-3xl font-bold bg-purple-600 hover:bg-purple-800 shadow-lg rounded-full w-10 h-10 flex items-center justify-center"
+            >
+              &times;
+            </button>
 
-            <div className="flex flex-col">
-              <div className="w-full flex justify-center bg-gray-900 px-4">
-                <img
-                  src={selectedProject.image}
-                  alt={selectedProject.title}
-                  className="lg:w-full w-[95%] object-contain rounded-xl shadow-2xl"
-                />
-              </div>
-              <div className="lg:p-8 p-6">
-                <h3 className="lg:text-3xl font-bold text-white mb-4 text-md">
-                  {selectedProject.title}
-                </h3>
-                <p className="text-gray-400 mb-6 lg:text-base text-xs">
-                  {selectedProject.description}
-                </p>
-                <div className="flex flex-wrap gap-2 mb-6">
-                  {selectedProject.tags.map((tag, index) => (
-                    <span
-                      key={index}
-                      className="bg-[#251f38] text-xs font-semibold text-purple-500 rounded-full px-2 py-1"
-                    >
-                      {tag}
-                    </span>
-                  ))}
+            {/* Scrollable Modal Content */}
+            <div className="overflow-y-auto max-h-[90vh] p-4 pt-16">
+              <div className="flex flex-col">
+                <div className="w-full flex justify-center bg-gray-900 px-4">
+                  <img
+                    src={selectedProject.image}
+                    alt={selectedProject.title}
+                    className="lg:w-full w-[95%] object-contain rounded-xl shadow-2xl"
+                  />
                 </div>
+                <div className="lg:p-8 p-6">
+                  <h3 className="lg:text-3xl font-bold text-white mb-4 text-md">
+                    {selectedProject.title}
+                  </h3>
+                  <p className="text-gray-400 mb-6 lg:text-base text-xs">
+                    {selectedProject.description}
+                  </p>
+                  <div className="flex flex-wrap gap-2 mb-6">
+                    {selectedProject.tags.map((tag, index) => (
+                      <span
+                        key={index}
+                        className="bg-[#251f38] text-xs font-semibold text-purple-500 rounded-full px-2 py-1"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
 
-                {/* Buttons */}
-                {selectedProject.webapp ? (
-                  <div className="flex gap-4">
-                    <a
-                      href={selectedProject.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-1/2 bg-gray-800 hover:bg-purple-800 text-gray-400 lg:px-6 lg:py-2 px-2 py-1 rounded-xl lg:text-xl text-sm font-semibold text-center"
-                    >
-                      View Code
-                    </a>
-                    <a
-                      href={selectedProject.webapp}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-1/2 bg-purple-600 hover:bg-purple-800 text-white lg:px-6 lg:py-2 px-2 py-1 rounded-xl lg:text-xl text-sm font-semibold text-center"
-                    >
-                      View Live
-                    </a>
-                  </div>
-                ) : (
-                  <div className="flex justify-center">
-                    <a
-                      href={selectedProject.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="bg-gray-800 hover:bg-purple-800 text-gray-400 lg:px-6 lg:py-2 px-4 py-2 rounded-xl lg:text-xl text-sm font-semibold text-center"
-                    >
-                      View Code
-                    </a>
-                  </div>
-                )}
+                  {/* Buttons */}
+                  {selectedProject.webapp ? (
+                    <div className="flex gap-4">
+                      <a
+                        href={selectedProject.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="w-1/2 bg-gray-800 hover:bg-purple-800 text-gray-400 lg:px-6 lg:py-2 px-2 py-1 rounded-xl lg:text-xl text-sm font-semibold text-center"
+                      >
+                        View Code
+                      </a>
+                      <a
+                        href={selectedProject.webapp}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="w-1/2 bg-purple-600 hover:bg-purple-800 text-white lg:px-6 lg:py-2 px-2 py-1 rounded-xl lg:text-xl text-sm font-semibold text-center"
+                      >
+                        View Live
+                      </a>
+                    </div>
+                  ) : (
+                    <div className="flex justify-center">
+                      <a
+                        href={selectedProject.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="bg-gray-800 hover:bg-purple-800 text-gray-400 lg:px-6 lg:py-2 px-4 py-2 rounded-xl lg:text-xl text-sm font-semibold text-center"
+                      >
+                        View Code
+                      </a>
+                    </div>
+                  )}
+                </div>
               </div>
             </div>
           </div>
