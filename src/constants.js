@@ -42,6 +42,8 @@ import matplotlib from './assets/tech_logo/matplotlib.png';
 import pytorch from './assets/tech_logo/pytorch.png';
 import tensorflow from './assets/tech_logo/tensorflow.png';
 import Sklearn from './assets/tech_logo/scikit-learn.png';
+import huggingface_logo from './assets/tech_logo/huggingface_logo.png';
+import langchain_logo from './assets/tech_logo/langchain_logo.png';
 
 // Experience Section Logo's
 import webverseLogo from './assets/company_logo/webverse_logo.png';
@@ -125,6 +127,8 @@ export const SkillsInfo = [
       { name: 'Plotly', logo: Plotly },
       { name: 'Pytorch', logo: pytorch },
       { name: 'Scikit-Learn', logo: Sklearn },
+      { name: 'HuggingFace', logo: huggingface_logo },
+      { name: 'LangChain', logo: langchain_logo },
     ],
   },
   {
