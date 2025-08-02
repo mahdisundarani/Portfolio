@@ -43,7 +43,7 @@ import pytorch from './assets/tech_logo/pytorch.png';
 import tensorflow from './assets/tech_logo/tensorflow.png';
 import Sklearn from './assets/tech_logo/scikit-learn.png';
 import huggingface_logo from './assets/tech_logo/huggingface_logo.png';
-import langchain_logo from './assets/tech_logo/langchain_logo.png';
+import langchain_logo from './assets/tech_logo/LangChain_logo.png';
 
 // Experience Section Logo's
 import webverseLogo from './assets/company_logo/webverse_logo.png';
