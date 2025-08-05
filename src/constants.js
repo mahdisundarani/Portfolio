@@ -82,6 +82,9 @@ import Logistic_regression from './assets/work_logo/Logistic_regression.png';
 import Decision_tree from './assets/work_logo/Decision_tree.png';
 import NN from './assets/work_logo/NN.png';
 import Kmeans from './assets/work_logo/K-means.png';
+import RNN from './assets/work_logo/RNN.png';
+import LSTMGRU from './assets/work_logo/LSTM-GRU.png';
+import QNAChatBot from './assets/work_logo/QNA-ChatBot.png';
 
 
 export const SkillsInfo = [
@@ -394,85 +397,100 @@ export const projects = [
 export const aiProjects = [
   {
     id: 0,
-    title: "Placement Package Prediction using Linear Regression",
+    title: "QnA Chatbot using LangChain & Meta LLaMA 3",
     description:
-      "Built and compared simple and multiple linear regression models to predict students' placement packages (LPA) using academic and skill-based features.In the simple model, CGPA was used to predict Package (LPA), while the multiple regression model included features like internship experience, number of projects, and coding skills. Developed using Python and scikit-learn, with interactive visualizations created using Plotly, alongside Matplotlib and Seaborn. The project explores how individual and combined academic and technical factors influence placement outcomes, offering insights into real-world career prediction.",
-    image: Linear_regression,
+      "Built an interactive QnA chatbot powered by Meta’s LLaMA 3-8B model using LangChain and Hugging Face API. Integrated the model with a clean Streamlit interface for real-time question-answering. Used environment variables for secure API access and optimized the model with caching to reduce latency. Users can ask natural language questions and receive AI-generated responses instantly, showcasing real-world application of LLMs.",
+    image: QNAChatBot,
     tags: [
       "Python",
-      "Pandas",
-      "NumPy",
-      "Matplotlib",
-      "Seaborn",
-      "Plotly",
-      "Scikit-learn",
-      "Simple Linear Regression",
-      "Multiple Linear Regression",
-      "Machine Learning",
-      "Supervised Learning",
-      "Data Visualization",
-      "Model Evaluation",
-      "Career Prediction"
-    ]
-    ,
-    github: "https://drive.google.com/drive/folders/1KUP5pMdC0Fx4txf56NDctxwtPbmRSulX?usp=drive_link ",
-    // webapp: "https://drive.google.com/drive/folders/1KUP5pMdC0Fx4txf56NDctxwtPbmRSulX?usp=drive_link",
-    notes: "https://drive.google.com/file/d/1n_C4b0AL4bVaBfTSM94ysIrOaqkpjX4m/view?usp=drive_link",
+      "Streamlit",
+      "LangChain",
+      "Hugging Face",
+      "Meta LLaMA 3",
+      "LLMs",
+      "Generative AI",
+      "Natural Language Processing",
+      "LangchainHuggingFace",
+      "QnA Bot",
+      "LLM Integration",
+      "HuggingFaceEndpoint"
+    ],
+    github: "https://github.com/mahdisundarani/Chatbot-hf-lama3",
+    // webapp: "" 
   },
   {
     id: 1,
-    title: "Iris Dataset classification with Logistic Regression",
+    title: "Next Word Prediction using LSTM & GRU on Kafka’s Metamorphosis",
     description:
-      "Implemented logistic and softmax regression models for classification tasks using the classic Iris dataset.Applied binary logistic regression to classify between two Iris species and extended it to multiclass classification using softmax regression for all three species. Developed using Python and scikit-learn, and visualized decision boundaries and data distributions with Matplotlib, Seaborn, and Plotly. This project demonstrates how logistic regression models can be applied to real-world datasets for both binary and multiclass prediction tasks.",
-    image: Logistic_regression,
+      "Developed a next-word prediction model on a cleaned version of Franz Kafka’s *Metamorphosis*, experimenting with both LSTM and GRU architectures. Used NLTK to tokenize the first 10,000 words and generated padded n-gram sequences. Trained two separate models with Embedding + LSTM and Embedding + GRU layers, followed by a dense softmax output. One-hot encoded labels and optimized using categorical crossentropy. Compared predictions and efficiency of both models, enabling real-time next-word suggestions for prompts like 'he found himself' and 'when Gregor Samsa'.",
+    image: LSTMGRU, 
     tags: [
       "Python",
-      "Pandas",
-      "NumPy",
-      "Scikit-learn",
-      "Logistic Regression",
-      "Softmax Regression",
-      "Binary Classification",
-      "Multiclass Classification",
-      "Machine Learning",
-      "Supervised Learning",
-      "Matplotlib",
-      "Seaborn",
-      "Plotly",
-      "Model Evaluation"
-    ]
-    ,
-    github: "https://drive.google.com/drive/folders/1USY3y_eq1vXRPJy3toPZVilUSjGNNl0m?usp=drive_link ",
-    // webapp: "https://drive.google.com/drive/folders/1USY3y_eq1vXRPJy3toPZVilUSjGNNl0m?usp=drive_link",
-    notes: "https://drive.google.com/file/d/1nfc1icVqgHcJljY5U4rTG5FdEMbpZtNR/view?usp=sharing",
+      "TensorFlow",
+      "Keras",
+      "LSTM",
+      "Text Generation",
+      "Next Word Prediction",
+      "Natural Language Processing",
+      "Kafka",
+      "NLTK",
+      "Tokenizer",
+      "Sequence Padding",
+      "Categorical Crossentropy",
+      "Softmax"
+    ],
+    github: "https://drive.google.com/drive/u/0/folders/1IZGHjHilgY0cgTjjvGad8hbd2LVRCcpA",
+    // webapp: "" 
   },
   {
     id: 2,
-    title: "Decision Tree Classification on Iris Dataset",
+    title: "Sentiment Analysis with RNN on IMDB Reviews",
     description:
-      "Built a decision tree classifier to perform multiclass classification using the Iris dataset.Used scikit-learn to train a decision tree model that classifies Iris flower species based on features like petal and sepal length/width. Visualized the tree structure and decision boundaries using Matplotlib, Seaborn, and Plotly for intuitive interpretation. Demonstrated model interpretability and performance evaluation with real-world, labeled data.",
-    image: Decision_tree,
+      "Built a sentiment analysis model using a Simple RNN on the IMDB movie review dataset. Preprocessed sequences with padding, embedded input words, and trained the model to classify sentiments as positive or negative. Achieved high accuracy using binary cross-entropy loss and validated with performance plots. Added review decoding and real-time prediction with confidence scores, enabling full interpretability. Visualized accuracy trends using Matplotlib.",
+    image: RNN,
     tags: [
       "Python",
-      "Scikit-learn",
-      "Decision Tree",
-      "Iris Dataset",
-      "Multiclass Classification",
-      "Machine Learning",
-      "Supervised Learning",
-      "Matplotlib",
-      "Seaborn",
-      "Plotly",
-      "Data Visualization",
-      "Model Evaluation"
-    ]
-    ,
-    github: "https://drive.google.com/drive/folders/1J2OqHQ0BTcq2aCv83P5YApbpawRtTYG5?usp=sharing",
-    // webapp: "https://drive.google.com/drive/folders/1J2OqHQ0BTcq2aCv83P5YApbpawRtTYG5?usp=sharing",
-    notes: "https://drive.google.com/file/d/1ng-vhYK59RFWfWoyjQG8n-SFKVmDAKYe/view?usp=sharing",
+      "TensorFlow",
+      "Keras",
+      "RNN",
+      "Sentiment Analysis",
+      "IMDB Dataset",
+      "Natural Language Processing",
+      "Embedding",
+      "Sequence Padding",
+      "Binary Classification",
+      "Matplotlib"
+    ],
+    github: "https://colab.research.google.com/drive/1BftMImXZ6cIi9sKuywj8CCcltl3NYM97?usp=drive_link",
+    // webapp: "", 
   },
   {
     id: 3,
+    title: "K-Means Clustering on Student and Synthetic Data",
+    description:
+      "Applied unsupervised learning with K-Means to discover patterns in both real and synthetic datasets using 2D and 3D clustering.Performed K-Means Clustering on a real-world student dataset (cgpa, iq) and synthetic 3D data generated using make_blobs. Used the Elbow Method to determine the optimal number of clusters (K=4). Visualized 2D clusters with Matplotlib and 3D clusters with Plotly, demonstrating insights into group formations based on similarity. This project highlighted the power of clustering in both real-world and simulated data environments.",
+    image: Kmeans,
+    tags: [
+      "Python",
+      "Scikit-learn",
+      "K-Means Clustering",
+      "Unsupervised Learning",
+      "Elbow Method",
+      "2D Clustering",
+      "3D Clustering",
+      "Matplotlib",
+      "Plotly",
+      "make_blobs",
+      "Data Visualization",
+      "Synthetic Data",
+      "Real-World Dataset"
+    ]
+    ,
+    github: "https://drive.google.com/drive/folders/13lqiZqA0K6HtVDdbpQio3N6wuU1xDG9-?usp=sharing",
+    // webapp: "https://drive.google.com/drive/folders/13lqiZqA0K6HtVDdbpQio3N6wuU1xDG9-?usp=sharing",
+  },
+  {
+    id: 4,
     title: "Neural Network for Fashion MNIST Classification",
     description:
       "Built a basic image classification model using a Feedforward Neural Network (FNN) with TensorFlow and Keras.Developed a Multilayer Perceptron (MLP) model to classify clothing items in the Fashion MNIST dataset. The architecture included a Flatten input layer, a dense hidden layer with ReLU, and a softmax output layer for 10 classes. Trained the model using sparse categorical cross-entropy and the Adam optimizer. Visualized predictions and accuracy, demonstrating foundational understanding of neural networks.",
@@ -499,28 +517,91 @@ export const aiProjects = [
     notes: "https://drive.google.com/file/d/1nnW7yN84wqb18qua-ZTiInVb9iD2slV9/view?usp=sharing",
   },
   {
-    id: 4,
-    title: "K-Means Clustering on Student and Synthetic Data",
+    id: 5,
+    title: "Decision Tree Classification on Iris Dataset",
     description:
-      "Applied unsupervised learning with K-Means to discover patterns in both real and synthetic datasets using 2D and 3D clustering.Performed K-Means Clustering on a real-world student dataset (cgpa, iq) and synthetic 3D data generated using make_blobs. Used the Elbow Method to determine the optimal number of clusters (K=4). Visualized 2D clusters with Matplotlib and 3D clusters with Plotly, demonstrating insights into group formations based on similarity. This project highlighted the power of clustering in both real-world and simulated data environments.",
-    image: Kmeans,
+      "Built a decision tree classifier to perform multiclass classification using the Iris dataset.Used scikit-learn to train a decision tree model that classifies Iris flower species based on features like petal and sepal length/width. Visualized the tree structure and decision boundaries using Matplotlib, Seaborn, and Plotly for intuitive interpretation. Demonstrated model interpretability and performance evaluation with real-world, labeled data.",
+    image: Decision_tree,
     tags: [
       "Python",
       "Scikit-learn",
-      "K-Means Clustering",
-      "Unsupervised Learning",
-      "Elbow Method",
-      "2D Clustering",
-      "3D Clustering",
+      "Decision Tree",
+      "Iris Dataset",
+      "Multiclass Classification",
+      "Machine Learning",
+      "Supervised Learning",
       "Matplotlib",
+      "Seaborn",
       "Plotly",
-      "make_blobs",
       "Data Visualization",
-      "Synthetic Data",
-      "Real-World Dataset"
+      "Model Evaluation"
     ]
     ,
-    github: "https://drive.google.com/drive/folders/13lqiZqA0K6HtVDdbpQio3N6wuU1xDG9-?usp=sharing",
-    // webapp: "https://drive.google.com/drive/folders/13lqiZqA0K6HtVDdbpQio3N6wuU1xDG9-?usp=sharing",
-  }
+    github: "https://drive.google.com/drive/folders/1J2OqHQ0BTcq2aCv83P5YApbpawRtTYG5?usp=sharing",
+    // webapp: "https://drive.google.com/drive/folders/1J2OqHQ0BTcq2aCv83P5YApbpawRtTYG5?usp=sharing",
+    notes: "https://drive.google.com/file/d/1ng-vhYK59RFWfWoyjQG8n-SFKVmDAKYe/view?usp=sharing",
+  },
+  {
+    id: 6,
+    title: "Iris Dataset classification with Logistic Regression",
+    description:
+      "Implemented logistic and softmax regression models for classification tasks using the classic Iris dataset.Applied binary logistic regression to classify between two Iris species and extended it to multiclass classification using softmax regression for all three species. Developed using Python and scikit-learn, and visualized decision boundaries and data distributions with Matplotlib, Seaborn, and Plotly. This project demonstrates how logistic regression models can be applied to real-world datasets for both binary and multiclass prediction tasks.",
+    image: Logistic_regression,
+    tags: [
+      "Python",
+      "Pandas",
+      "NumPy",
+      "Scikit-learn",
+      "Logistic Regression",
+      "Softmax Regression",
+      "Binary Classification",
+      "Multiclass Classification",
+      "Machine Learning",
+      "Supervised Learning",
+      "Matplotlib",
+      "Seaborn",
+      "Plotly",
+      "Model Evaluation"
+    ]
+    ,
+    github: "https://drive.google.com/drive/folders/1USY3y_eq1vXRPJy3toPZVilUSjGNNl0m?usp=drive_link ",
+    // webapp: "https://drive.google.com/drive/folders/1USY3y_eq1vXRPJy3toPZVilUSjGNNl0m?usp=drive_link",
+    notes: "https://drive.google.com/file/d/1nfc1icVqgHcJljY5U4rTG5FdEMbpZtNR/view?usp=sharing",
+  },
+  {
+    id: 7,
+    title: "Placement Package Prediction using Linear Regression",
+    description:
+      "Built and compared simple and multiple linear regression models to predict students' placement packages (LPA) using academic and skill-based features.In the simple model, CGPA was used to predict Package (LPA), while the multiple regression model included features like internship experience, number of projects, and coding skills. Developed using Python and scikit-learn, with interactive visualizations created using Plotly, alongside Matplotlib and Seaborn. The project explores how individual and combined academic and technical factors influence placement outcomes, offering insights into real-world career prediction.",
+    image: Linear_regression,
+    tags: [
+      "Python",
+      "Pandas",
+      "NumPy",
+      "Matplotlib",
+      "Seaborn",
+      "Plotly",
+      "Scikit-learn",
+      "Simple Linear Regression",
+      "Multiple Linear Regression",
+      "Machine Learning",
+      "Supervised Learning",
+      "Data Visualization",
+      "Model Evaluation",
+      "Career Prediction"
+    ]
+    ,
+    github: "https://drive.google.com/drive/folders/1KUP5pMdC0Fx4txf56NDctxwtPbmRSulX?usp=drive_link ",
+    // webapp: "https://drive.google.com/drive/folders/1KUP5pMdC0Fx4txf56NDctxwtPbmRSulX?usp=drive_link",
+    notes: "https://drive.google.com/file/d/1n_C4b0AL4bVaBfTSM94ysIrOaqkpjX4m/view?usp=drive_link",
+  },
+
+
+
+
+
+
+
+
+
 ];
