@@ -90,6 +90,34 @@ import QNAChatBot from './assets/work_logo/QNA-ChatBot.png';
 
 export const SkillsInfo = [
   {
+    title: 'Machine Learning',
+    skills: [
+      { name: 'Numpy', logo: NumPy },
+      { name: 'Pandas', logo: Pandas },
+      { name: 'Matplotlib', logo: matplotlib },
+      { name: 'Keras', logo: Keras },
+      { name: 'TesorFlow', logo: tensorflow },
+      { name: 'Plotly', logo: Plotly },
+      { name: 'Pytorch', logo: pytorch },
+      { name: 'Scikit-Learn', logo: Sklearn },
+      { name: 'HuggingFace', logo: huggingface_logo },
+      { name: 'LangChain', logo: langchain_logo },
+    ],
+  },
+  {
+    title: 'Tools',
+    skills: [
+      { name: 'Git', logo: gitLogo },
+      { name: 'GitHub', logo: githubLogo },
+      { name: 'VS Code', logo: vscodeLogo },
+      { name: 'Postman', logo: postmanLogo },
+      { name: 'Compass', logo: mcLogo },
+      { name: 'Vercel', logo: vercelLogo },
+      { name: 'Netlify', logo: netlifyLogo },
+      { name: 'Figma', logo: figmaLogo },
+    ],
+  },
+  {
     title: 'Frontend',
     skills: [
       { name: 'HTML', logo: htmlLogo },
@@ -120,38 +148,10 @@ export const SkillsInfo = [
       { name: 'Django', logo: Django },
     ],
   },
-  {
-    title: 'Machine Learning',
-    skills: [
-      { name: 'Numpy', logo: NumPy },
-      { name: 'Pandas', logo: Pandas },
-      { name: 'Matplotlib', logo: matplotlib },
-      { name: 'Keras', logo: Keras },
-      { name: 'TesorFlow', logo: tensorflow },
-      { name: 'Plotly', logo: Plotly },
-      { name: 'Pytorch', logo: pytorch },
-      { name: 'Scikit-Learn', logo: Sklearn },
-      { name: 'HuggingFace', logo: huggingface_logo },
-      { name: 'LangChain', logo: langchain_logo },
-    ],
-  },
-  {
-    title: 'Tools',
-    skills: [
-      { name: 'Git', logo: gitLogo },
-      { name: 'GitHub', logo: githubLogo },
-      { name: 'VS Code', logo: vscodeLogo },
-      { name: 'Postman', logo: postmanLogo },
-      { name: 'Compass', logo: mcLogo },
-      { name: 'Vercel', logo: vercelLogo },
-      { name: 'Netlify', logo: netlifyLogo },
-      { name: 'Figma', logo: figmaLogo },
-    ],
-  },
 ];
 
 export const experiences = [
-   {
+  {
     id: 0,
     img: IITH_logo,
     role: "AI Research Intern",
