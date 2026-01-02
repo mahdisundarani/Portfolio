@@ -41,7 +41,7 @@ const About = () => {
           </h3>
           {/* About Me Paragraph */}
           <p className="text-base sm:text-lg md:text-lg text-gray-400 mb-10 mt-8 leading-relaxed px-2">
-            I'm Mahdi Sundarani, a 4th-year BE IT student and AI/ML apprentice at Cognyx AI. My focus lies in core machine learning domains—supervised, unsupervised, deep, and reinforcement learning, NLP, Generative AI, and LLMs—with a strong foundation in mathematics and programming. Previously a MERN stack and Next.js trainee, I now aim to contribute to impactful machine learning research and innovation.
+            I’m Mahdi Sundarani, a final-year BE IT student and AI Research Intern at IIT Hyderabad (NetX Lab). I work in core machine learning areas including supervised and unsupervised learning, deep learning, reinforcement learning, NLP, and large language models, with a strong foundation in mathematics and programming. With prior industry experience in AI/ML, I am now focused on research driven work building theoretical rigor, conducting literature reviews, and developing experimental ML pipelines with the goal of contributing to impactful machine learning research and advancing toward top-tier academic and research opportunities.
           </p>
           {/* Resume Button */}
           <a
@@ -56,7 +56,7 @@ const About = () => {
           >
             DOWNLOAD CV
           </a>
-          
+
         </div>
         {/* Right Side */}
         <div className="md:w-1/2 flex justify-center md:justify-end">

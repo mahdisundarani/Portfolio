@@ -51,6 +51,7 @@ import agcLogo from './assets/company_logo/agc_logo.png';
 import newtonschoolLogo from './assets/company_logo/newtonschool_logo.png';
 import CognyxLogo from './assets/company_logo/Cognyx_logo.png';
 import CreArtLogo from './assets/company_logo/CreArt_logo.png';
+import IITH_logo from './assets/company_logo/IITH_logo.png';
 
 // Education Section Logo's
 import glaLogo from './assets/education_logo/gla_logo.png';
@@ -150,8 +151,24 @@ export const SkillsInfo = [
 ];
 
 export const experiences = [
-  {
+   {
     id: 0,
+    img: IITH_logo,
+    role: "AI Research Intern",
+    company: "IIT Hyderabad",
+    date: "January 2026 – Present",
+    desc: "Selected as a Research Intern at IIT Hyderabad under the CSE department. Currently undergoing onboarding and literature review, working closely with research mentors to identify problem statements and research directions in machine learning. Preparing experimental pipelines and strengthening theoretical foundations to contribute to ongoing and upcoming research projects.",
+    skills: [
+      "Machine Learning",
+      "Deep Learning",
+      "Python",
+      "Research Methodology",
+      "Literature Review",
+      "Mathematical Foundations for ML"
+    ],
+  },
+  {
+    id: 1,
     img: CognyxLogo,
     role: "AI Engineer ApprenticeShip",
     company: "Cognyx AI",
@@ -178,7 +195,7 @@ export const experiences = [
     ],
   },
   {
-    id: 1,
+    id: 2,
     img: CognyxLogo,
     role: "Manual Tester",
     company: "Cognyx AI",
@@ -198,7 +215,7 @@ export const experiences = [
     ],
   },
   {
-    id: 2,
+    id: 3,
     img: CognyxLogo,
     role: "MERN Stack And NEXTJS ApprenticeShip",
     company: "Cognyx AI",
@@ -218,7 +235,7 @@ export const experiences = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     img: CreArtLogo,
     role: "FullStack Intern",
     company: "CreArt",
@@ -423,7 +440,7 @@ export const aiProjects = [
     title: "Next Word Prediction using LSTM & GRU on Kafka’s Metamorphosis",
     description:
       "Developed a next-word prediction model on a cleaned version of Franz Kafka’s *Metamorphosis*, experimenting with both LSTM and GRU architectures. Used NLTK to tokenize the first 10,000 words and generated padded n-gram sequences. Trained two separate models with Embedding + LSTM and Embedding + GRU layers, followed by a dense softmax output. One-hot encoded labels and optimized using categorical crossentropy. Compared predictions and efficiency of both models, enabling real-time next-word suggestions for prompts like 'he found himself' and 'when Gregor Samsa'.",
-    image: LSTMGRU, 
+    image: LSTMGRU,
     tags: [
       "Python",
       "TensorFlow",
