@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import ReactTypingEffect from 'react-typing-effect';
 import Tilt from 'react-parallax-tilt';
 import profileImage from '../../assets/profile2.png';
@@ -25,10 +25,10 @@ const About = () => {
             <span className="text-white">I am a </span>
             <ReactTypingEffect
               text={[
-                'AI Engineer',
-                'AI Researcher',
-                'MERN Stack Developer',
-                'Software Engineer',
+                'AI/ML Engineer',
+                'Agentic AI Engineer',
+                'Gen AI Engineer',
+                'Data Science Engineer',
               ]}
               speed={100}
               eraseSpeed={50}
@@ -41,11 +41,11 @@ const About = () => {
           </h3>
           {/* About Me Paragraph */}
           <p className="text-base sm:text-lg md:text-lg text-gray-400 mb-10 mt-8 leading-relaxed px-2">
-            I’m Mahdi Sundarani, a final-year BE IT student and AI Research Intern at IIT Hyderabad (NetX Lab). I work in core machine learning areas including supervised and unsupervised learning, deep learning, reinforcement learning, NLP, and large language models, with a strong foundation in mathematics and programming. With prior industry experience in AI/ML, I am now focused on research driven work building theoretical rigor, conducting literature reviews, and developing experimental ML pipelines with the goal of contributing to impactful machine learning research and advancing toward top-tier academic and research opportunities.
+            I’m Mahdi Sundarani, an AI/ML Engineer at Cognyx AI in Ahmedabad. I design and ship production-grade intelligent systems, specializing in Retrieval-Augmented Generation (RAG), LangGraph-powered multi-agent workflows, and LLM orchestration. At Cognyx, I built a scalable RAG pipeline that delivers {'>'}95% factual accuracy and 40% lower latency, developed stateful multi-agent systems for complex decision flows, and created n8n + LLM automation that cut manual CRM effort by 60% across 500+ monthly interactions. I also introduced the Model Context Protocol (MCP) to streamline tool and context integration across agentic systems. I bring hands-on expertise in LLMs, Transformers, and full-stack AI applications — always focused on turning cutting-edge AI into practical, high-impact solutions.
           </p>
           {/* Resume Button */}
           <a
-            href="https://drive.google.com/file/d/1fX6g34h8piEsoF6mtIxcj6xG3autMZVP/view?usp=sharing"
+            href="https://drive.google.com/file/d/1v7pbfKNo7aZmb1YSJjWBQRiNzsadkoYB/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block text-white py-3 px-8 rounded-full mt-5 text-lg font-bold transition duration-300 transform hover:scale-105"

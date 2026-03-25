@@ -44,6 +44,19 @@ import tensorflow from './assets/tech_logo/tensorflow.png';
 import Sklearn from './assets/tech_logo/scikit-learn.png';
 import huggingface_logo from './assets/tech_logo/huggingface_logo.png';
 import langchain_logo from './assets/tech_logo/LangChain_logo.png';
+import langgraph_logo from './assets/tech_logo/langgraph.svg';
+import mcp_logo from './assets/tech_logo/mcp.svg';
+import n8n_logo from './assets/tech_logo/n8n.svg';
+import openai_logo from './assets/tech_logo/openai.svg';
+import qdrant_logo from './assets/tech_logo/qdrant.svg';
+import meta_logo from './assets/tech_logo/meta.svg';
+import supabase_logo from './assets/tech_logo/supabase.svg';
+import vite_logo from './assets/tech_logo/vite.svg';
+import fastapi_logo from './assets/tech_logo/fastapi.svg';
+import streamlit_logo from './assets/tech_logo/streamlit.svg';
+import docker_logo from './assets/tech_logo/docker.svg';
+import jupyter_logo from './assets/tech_logo/jupyter.svg';
+import colab_logo from './assets/tech_logo/colab.svg';
 
 // Experience Section Logo's
 import webverseLogo from './assets/company_logo/webverse_logo.png';
@@ -86,94 +99,128 @@ import Kmeans from './assets/work_logo/K-means.png';
 import RNN from './assets/work_logo/RNN.png';
 import LSTMGRU from './assets/work_logo/LSTM-GRU.png';
 import QNAChatBot from './assets/work_logo/QNA-ChatBot.png';
+import CampusAssistant from './assets/work_logo/Campus_Assistant.png';
 
 
 export const SkillsInfo = [
   {
+    title: 'Generative AI & Agentic Workflows',
+    skills: [
+      { name: 'LangChain', logo: langchain_logo },
+      { name: 'LangGraph', logo: langgraph_logo },
+      { name: 'MCP', logo: mcp_logo },
+      { name: 'n8n', logo: n8n_logo },
+      { name: 'OpenAI', logo: openai_logo },
+      { name: 'RAG', logo: langchain_logo }, // Reuse langchain as RAG symbol or just text
+      { name: 'Multi-Agent', logo: langgraph_logo },
+      { name: 'Prompt Eng.', logo: huggingface_logo },
+    ],
+  },
+  {
     title: 'Machine Learning',
     skills: [
+      { name: 'PyTorch', logo: pytorch },
+      { name: 'TensorFlow', logo: tensorflow },
+      { name: 'Keras', logo: Keras },
+      { name: 'Scikit-Learn', logo: Sklearn },
       { name: 'Numpy', logo: NumPy },
       { name: 'Pandas', logo: Pandas },
       { name: 'Matplotlib', logo: matplotlib },
-      { name: 'Keras', logo: Keras },
-      { name: 'TesorFlow', logo: tensorflow },
-      { name: 'Plotly', logo: Plotly },
-      { name: 'Pytorch', logo: pytorch },
-      { name: 'Scikit-Learn', logo: Sklearn },
       { name: 'HuggingFace', logo: huggingface_logo },
-      { name: 'LangChain', logo: langchain_logo },
     ],
   },
   {
-    title: 'Tools',
+    title: 'Data & Vector Stores',
     skills: [
-      { name: 'Git', logo: gitLogo },
-      { name: 'GitHub', logo: githubLogo },
-      { name: 'VS Code', logo: vscodeLogo },
-      { name: 'Postman', logo: postmanLogo },
-      { name: 'Compass', logo: mcLogo },
-      { name: 'Vercel', logo: vercelLogo },
-      { name: 'Netlify', logo: netlifyLogo },
-      { name: 'Figma', logo: figmaLogo },
-    ],
-  },
-  {
-    title: 'Frontend',
-    skills: [
-      { name: 'HTML', logo: htmlLogo },
-      { name: 'CSS', logo: cssLogo },
-      { name: 'SASS', logo: sassLogo },
-      { name: 'JavaScript', logo: javascriptLogo },
-      { name: 'typescript', logo: typescriptLogo },
-      { name: 'ReactJS', logo: reactjsLogo },
-      { name: 'Angular', logo: angularLogo },
-      { name: 'Redux', logo: reduxLogo },
-      { name: 'Next JS', logo: nextjsLogo },
-      { name: 'Tailwind CSS', logo: tailwindcssLogo },
-      // { name: 'GSAP', logo: gsapLogo },
-      { name: 'Material UI', logo: materialuiLogo },
-      { name: 'Bootstrap', logo: bootstrapLogo },
-    ],
-  },
-  {
-    title: 'Backend',
-    skills: [
-      // { name: 'Springboot', logo: springbootLogo },
-      { name: 'Node JS', logo: nodejsLogo },
-      { name: 'Express JS', logo: expressjsLogo },
-      { name: 'MySQL', logo: mysqlLogo },
+      { name: 'Qdrant', logo: qdrant_logo },
+      { name: 'FAISS', logo: meta_logo },
+      { name: 'Supabase', logo: supabase_logo },
       { name: 'MongoDB', logo: mongodbLogo },
-      { name: 'Firebase', logo: firebaseLogo },
       { name: 'PostgreSQL', logo: postgreLogo },
-      { name: 'Django', logo: Django },
+      { name: 'MySQL', logo: mysqlLogo },
+      { name: 'Firebase', logo: firebaseLogo },
+      { name: 'Scrapy', logo: pythonLogo },
+    ],
+  },
+  {
+    title: 'Frontend & Backend',
+    skills: [
+      { name: 'React 19', logo: reactjsLogo },
+      { name: 'Next JS', logo: nextjsLogo },
+      { name: 'FastAPI', logo: fastapi_logo },
+      { name: 'Node JS', logo: nodejsLogo },
+      { name: 'Tailwind CSS', logo: tailwindcssLogo },
+      { name: 'TypeScript', logo: typescriptLogo },
+      { name: 'Vite', logo: vite_logo },
+      { name: 'Streamlit', logo: streamlit_logo },
+    ],
+  },
+  {
+    title: 'Tools & Ecosystem',
+    skills: [
+      { name: 'Docker', logo: docker_logo },
+      { name: 'Git & GitHub', logo: githubLogo },
+      { name: 'Postman', logo: postmanLogo },
+      { name: 'VS Code', logo: vscodeLogo },
+      { name: 'Jupyter', logo: jupyter_logo },
+      { name: 'Google Colab', logo: colab_logo },
+      { name: 'Vercel', logo: vercelLogo },
+      { name: 'Figma', logo: figmaLogo },
     ],
   },
 ];
 
 export const experiences = [
+  // {
+  //   id: 0,
+  //   img: IITH_logo,
+  //   role: "AI Research Intern",
+  //   company: "IIT Hyderabad",
+  //   date: "January 2026 – Present",
+  //   desc: "Selected as a Research Intern at IIT Hyderabad under the CSE department. Currently undergoing onboarding and literature review, working closely with research mentors to identify problem statements and research directions in machine learning. Preparing experimental pipelines and strengthening theoretical foundations to contribute to ongoing and upcoming research projects.",
+  //   skills: [
+  //     "Machine Learning",
+  //     "Deep Learning",
+  //     "Python",
+  //     "Research Methodology",
+  //     "Literature Review",
+  //     "Mathematical Foundations for ML"
+  //   ],
+  // },
   {
     id: 0,
-    img: IITH_logo,
-    role: "AI Research Intern",
-    company: "IIT Hyderabad",
-    date: "January 2026 – Present",
-    desc: "Selected as a Research Intern at IIT Hyderabad under the CSE department. Currently undergoing onboarding and literature review, working closely with research mentors to identify problem statements and research directions in machine learning. Preparing experimental pipelines and strengthening theoretical foundations to contribute to ongoing and upcoming research projects.",
+    img: CognyxLogo,
+    role: "AI Engineer Internship",
+    company: "Cognyx AI",
+    date: "August 2024 - Present",
+    desc: "Engineered production RAG pipeline: scraped web data using Apify, built vector stores in Qdrant/Supabase, integrated Hugging Face models via langchain-huggingface; achieved >95% factual accuracy and 40% reduced latency through scalable API deployment. Designed stateful multi-agent systems using LangGraph + LangChain; orchestrated specialized agents for data processing, reasoning, tool-calling and dynamic decision flows; enhanced robustness for production-grade adaptive workflows. Built intelligent CRM automation workflows in n8n + LLM agents: automated lead qualification, scheduling, multi-channel follow-ups and real-time DB sync; reduced manual effort by 60% across 500+ monthly client interactions. Implemented Model Context Protocol (MCP) to standardize tool and context integration for LLM agents; enabled dynamic access to external data sources, improving modularity, scalability, and interoperability across multi-agent workflows.",
     skills: [
-      "Machine Learning",
-      "Deep Learning",
       "Python",
-      "Research Methodology",
-      "Literature Review",
-      "Mathematical Foundations for ML"
+      "LangChain",
+      "LangGraph",
+      "Hugging Face",
+      "RAG",
+      "Multi-Agent Systems",
+      "LLM Agents",
+      "n8n",
+      "Model Context Protocol (MCP)",
+      "Qdrant",
+      "Supabase",
+      "Apify",
+      "Vector Stores",
+      "FastAPI",
+      "Prompt Engineering",
+      "Generative AI",
+      "Deep Learning"
     ],
   },
   {
     id: 1,
     img: CognyxLogo,
-    role: "AI Engineer ApprenticeShip",
+    role: "AI Engineer Internship",
     company: "Cognyx AI",
     date: "August 2024 - Present",
-    desc: "Working as an AI Engineer Apprentice at Cognyx AI, focusing on core AI/ML concepts. Gained strong foundations in probability, statistics, linear algebra, and calculus. Trained in supervised, unsupervised, deep, and reinforcement learning through Stanford/DeepLearning.AI courses. Currently exploring NLP, LLMs, and Generative AI with real-world project exposure.",
+    desc: "Working as an AI Engineer Intern at Cognyx AI, focusing on core AI/ML concepts. Gained strong foundations in probability, statistics, linear algebra, and calculus. Trained in supervised, unsupervised, deep, and reinforcement learning through Stanford/DeepLearning.AI courses. Currently exploring NLP, LLMs, and Generative AI with real-world project exposure.",
     skills: [
       "Python",
       "NumPy",
@@ -194,63 +241,23 @@ export const experiences = [
       "Neural Networks"
     ],
   },
-  {
-    id: 2,
-    img: CognyxLogo,
-    role: "Manual Tester",
-    company: "Cognyx AI",
-    date: "August 2024 - November 2024",
-    desc: "Worked as a Manual QA Tester Intern at Cognyx AI for 4 months, testing real-time web applications to identify bugs, UI/UX issues, and functional errors. Created detailed test cases, performed regression and exploratory testing, and collaborated with developers to ensure product quality across multiple live client projects.",
-    skills: [
-      "Manual Testing",
-      "Regression Testing",
-      "Test Case Design",
-      "Bug Reporting",
-      "JIRA",
-      "Postman",
-      "UI/UX Testing",
-      "Cross-Browser Testing",
-      "Communication",
-      "Team Collaboration"
-    ],
-  },
-  {
-    id: 3,
-    img: CognyxLogo,
-    role: "MERN Stack And NEXTJS ApprenticeShip",
-    company: "Cognyx AI",
-    date: "November 2023 - August 2024",
-    desc: "Completed a full-stack Web Development Apprenticeship at Cognyx AI, mastering the MERN stack and building 8+ real-world projects (available on GitHub). Progressed to advanced concepts with Next.js, gaining hands-on experience in modern web architecture, server-side rendering, API integration, and deployment using the latest industry tools and practices.",
-    skills: [
-      "ReactJS",
-      "Redux",
-      "NEXT JS",
-      "JavaScript",
-      "TypeScript",
-      "Tailwind CSS",
-      "JWT",
-      "Express JS",
-      "NodeJS",
-      "MongoDB",
-    ],
-  },
-  {
-    id: 4,
-    img: CreArtLogo,
-    role: "FullStack Intern",
-    company: "CreArt",
-    date: "August 2022 - June 2023",
-    desc: "Worked as a Web Developer Intern, building HiFix System — a Django-based web app that bridges the gap between users and local service providers (electricians, plumbers, etc.). Enabled users to post service needs by location and category, while workers could apply, with selection based on reviews, budget, and proximity.",
-    skills: [
-      "HTML",
-      "CSS",
-      "Javascript",
-      "Bootstrap",
-      "Python",
-      "Django",
-      "MySQL",
-    ],
-  },
+  // {
+  //   id: 2,
+  //   img: CreArtLogo,
+  //   role: "FullStack Intern",
+  //   company: "CreArt",
+  //   date: "August 2022 - June 2023",
+  //   desc: "Worked as a Web Developer Intern, building HiFix System — a Django-based web app that bridges the gap between users and local service providers (electricians, plumbers, etc.). Enabled users to post service needs by location and category, while workers could apply, with selection based on reviews, budget, and proximity.",
+  //   skills: [
+  //     "HTML",
+  //     "CSS",
+  //     "Javascript",
+  //     "Bootstrap",
+  //     "Python",
+  //     "Django",
+  //     "MySQL",
+  //   ],
+  // },
 ];
 
 export const education = [
@@ -259,7 +266,7 @@ export const education = [
     img: AITLogo,
     school: "Ahmedabad Institute of Technology, Ahmedabad",
     date: "Sept 2023 - May 2026",
-    grade: "8.50 CGPA",
+    grade: "8.71 CGPA",
     desc: "I am doing my Bechlors's degree (BE) in Information Technology from AIT College Affiliated with GTU, Ahmedabad. During my time at AIT, I gained a strong foundation in programming, software development, and computer science principles. I have studied courses such as Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Web Development, and Software Engineering. I actively participated in various workshops and technical events, which enhanced my skills and knowledge. My experience at AIT (GTU) University has been instrumental in shaping my technical abilities and professional growth.",
     degree: "Bechlors in IT Engineering - BE (Information Technology)",
   },
@@ -277,51 +284,6 @@ export const education = [
 export const projects = [
   {
     id: 0,
-    title: "Haptik AI",
-    description:
-      "created using React.js, Tailwind CSS, and UI libraries like React Slick and Swiper, this project replicates the interactive feel and aesthetics of the original Haptik site. Features include dynamic carousels, responsive layouts, and smooth navigation with React Router. Form validation is handled using Formik and Yup, ensuring both functionality and form. Designed with modular, maintainable code for easy scaling and real-world usability.",
-    image: HaptikAI,
-    tags: [
-      "React JS",
-      "React Router",
-      "Tailwind CSS",
-      "React Slick",
-      "Swiper JS",
-      "Formik",
-      "Yup",
-      "JavaScript",
-      "Responsive Design",
-      "Web Development",
-      "UI/UX"
-    ],
-    github: "https://github.com/mahdisundarani/Haptik-ai.git",
-    webapp: "https://haptik-ai-eta.vercel.app/",
-  },
-  {
-    id: 1,
-    title: "Data Finance",
-    description:
-      "Built with React, Tailwind CSS, and JavaScript, this project showcases dynamic data presentation through interactive UI elements and modern visuals. Leveraging reusable components and responsive design principles, it ensures a seamless experience across devices. Key features include animated text via React Typed and enhanced styling with React Icons, all organized through a clean, maintainable codebase.",
-    image: DataFinance,
-    tags: [
-      "React JS",
-      "JavaScript",
-      "HTML",
-      "CSS",
-      "Tailwind CSS",
-      "React Icons",
-      "React Typed",
-      "Responsive Design",
-      "Financial Dashboard",
-      "Web Development",
-      "UI Components"
-    ]
-    ,
-    github: "https://github.com/mahdisundarani/Data-finance-tailwind-react.git",
-    webapp: "https://data-finance-tailwind-react-pi.vercel.app/",
-  },
-  {
-    id: 2,
     title: "Yelp Camp",
     description:
       "Built using Node.js, Express.js, MongoDB, and EJS, YelpCamp features secure authentication with Passport.js, image uploads via Cloudinary and Multer, and robust CRUD operations. Users can register, log in, post campgrounds, and interact through reviews. Designed with responsive UI using Bootstrap, and ensures smooth form validation and routing for an intuitive experience.",
@@ -347,7 +309,7 @@ export const projects = [
     // webapp: "https://movie-recommendation-app-jet.vercel.app/",
   },
   {
-    id: 3,
+    id: 1,
     title: "INoteBook",
     description:
       "Built using the MERN stack, iNotebook allows users to register, log in, and manage personal notes securely. Utilizes JWT and Bcrypt.js for authentication and password encryption. Data is stored using MongoDB with Mongoose, and the frontend is built with React and Bootstrap for a responsive, intuitive experience. API communication is handled via Axios.",
@@ -373,6 +335,51 @@ export const projects = [
     // webapp: "https://www.npmjs.com/package/cmtk-email-validator",
   },
   {
+    id: 2,
+    title: "Haptik AI",
+    description:
+      "created using React.js, Tailwind CSS, and UI libraries like React Slick and Swiper, this project replicates the interactive feel and aesthetics of the original Haptik site. Features include dynamic carousels, responsive layouts, and smooth navigation with React Router. Form validation is handled using Formik and Yup, ensuring both functionality and form. Designed with modular, maintainable code for easy scaling and real-world usability.",
+    image: HaptikAI,
+    tags: [
+      "React JS",
+      "React Router",
+      "Tailwind CSS",
+      "React Slick",
+      "Swiper JS",
+      "Formik",
+      "Yup",
+      "JavaScript",
+      "Responsive Design",
+      "Web Development",
+      "UI/UX"
+    ],
+    github: "https://github.com/mahdisundarani/Haptik-ai.git",
+    webapp: "https://haptik-ai-eta.vercel.app/",
+  },
+  {
+    id: 3,
+    title: "Data Finance",
+    description:
+      "Built with React, Tailwind CSS, and JavaScript, this project showcases dynamic data presentation through interactive UI elements and modern visuals. Leveraging reusable components and responsive design principles, it ensures a seamless experience across devices. Key features include animated text via React Typed and enhanced styling with React Icons, all organized through a clean, maintainable codebase.",
+    image: DataFinance,
+    tags: [
+      "React JS",
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "Tailwind CSS",
+      "React Icons",
+      "React Typed",
+      "Responsive Design",
+      "Financial Dashboard",
+      "Web Development",
+      "UI Components"
+    ]
+    ,
+    github: "https://github.com/mahdisundarani/Data-finance-tailwind-react.git",
+    webapp: "https://data-finance-tailwind-react-pi.vercel.app/",
+  },
+  {
     id: 4,
     title: "Text Utils",
     description:
@@ -392,47 +399,50 @@ export const projects = [
     github: "https://github.com/mahdisundarani/text-utils.git",
     webapp: "https://text-utils-iota-indol.vercel.app/",
   },
-  {
-    id: 5,
-    title: "Amazon Clone",
-    description:
-      "This project replicates the structure, layout, and design of the original Amazon website homepage to showcase fundamental front-end development skills. Focused on responsiveness, clean layout, and accurate styling — without using any JavaScript or frameworks.",
-    image: Amazon_clone,
-    tags: [
-      "HTML",
-      "CSS",
-      "Responsive Design",
-      "Front-End Development",
-      "Web Design"
-    ]
-    ,
-    github: "https://github.com/mahdisundarani/Amazon-clone.git",
-    webapp: "https://amazon-clone-eta-one.vercel.app/",
-  }
+  // {
+  //   id: 5,
+  //   title: "Amazon Clone",
+  //   description:
+  //     "This project replicates the structure, layout, and design of the original Amazon website homepage to showcase fundamental front-end development skills. Focused on responsiveness, clean layout, and accurate styling — without using any JavaScript or frameworks.",
+  //   image: Amazon_clone,
+  //   tags: [
+  //     "HTML",
+  //     "CSS",
+  //     "Responsive Design",
+  //     "Front-End Development",
+  //     "Web Design"
+  //   ]
+  //   ,
+  //   github: "https://github.com/mahdisundarani/Amazon-clone.git",
+  //   webapp: "https://amazon-clone-eta-one.vercel.app/",
+  // }
 ];
 
 export const aiProjects = [
   {
     id: 0,
-    title: "QnA Chatbot using LangChain & Meta LLaMA 3",
+    title: "AI Assisted Agentic Campus Assistant (LLM + RAG + Multi Agent LangGraph + MCP)",
     description:
-      "Built an interactive QnA chatbot powered by Meta’s LLaMA 3-8B model using LangChain and Hugging Face API. Integrated the model with a clean Streamlit interface for real-time question-answering. Used environment variables for secure API access and optimized the model with caching to reduce latency. Users can ask natural language questions and receive AI-generated responses instantly, showcasing real-world application of LLMs.",
-    image: QNAChatBot,
+      "Developed a full-stack AI-powered campus assistant web app that enables students to query policies, timetables, deadlines, and generate cited, structured study plans through an intelligent LLM chat interface. Built a complete end-to-end RAG pipeline with PDF/DOCX ingestion, chunking, embeddings, and FAISS vector store, while exposing campus documents, timetables, and notices through custom Model Context Protocol (MCP) servers for LangGraph agent consumption. Designed a sophisticated LangGraph multi-agent workflow featuring supervisor, retriever, timetable specialist, planner, and response writer agents, integrated with role-based Supabase authentication, an admin dashboard for document uploads/indexing, and real-time monitoring of queries, latency, and tool usage.",
+    image: CampusAssistant,
     tags: [
-      "Python",
-      "Streamlit",
+      "Next.js",
+      "FastAPI",
+      "LangGraph",
       "LangChain",
-      "Hugging Face",
-      "Meta LLaMA 3",
-      "LLMs",
-      "Generative AI",
-      "Natural Language Processing",
-      "LangchainHuggingFace",
-      "QnA Bot",
-      "LLM Integration",
-      "HuggingFaceEndpoint"
+      "FAISS",
+      "Supabase",
+      "Model Context Protocol",
+      "RAG",
+      "Multi-Agent Systems",
+      "LLM Agents",
+      "Retrieval Augmented Generation",
+      "AI Chatbot",
+      "Full Stack Development",
+      "Vector Store",
+      "Role-Based Auth"
     ],
-    github: "https://github.com/mahdisundarani/Chatbot-hf-lama3",
+    github: "https://github.com/mahdisundarani/Campus-Asistant",
     // webapp: "" 
   },
   {
