@@ -139,7 +139,7 @@ export const SkillsInfo = [
       { name: 'PostgreSQL', logo: postgreLogo },
       { name: 'MySQL', logo: mysqlLogo },
       { name: 'Firebase', logo: firebaseLogo },
-      { name: 'Scrapy', logo: pythonLogo },
+      { name: 'Apify', logo: pythonLogo },
     ],
   },
   {
