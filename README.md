@@ -100,6 +100,10 @@ My work focuses on developing production-grade AI systems that leverage reasonin
    ```bash
    npm run dev
    ```
+5. **Build for production**
+   ```bash
+   npm run build
+   ```
 
 ---
 
