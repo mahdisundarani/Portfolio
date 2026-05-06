@@ -12,15 +12,15 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_d0y53l4",  // Replace with your EmailJS Service ID
-        "template_4wn3p0e",  // Replace with your EmailJS Template ID
-        form.current,
-        "ZNBR12yvxbRFoE0hg"  // Replace with your EmailJS Public Key
+        "service_d0y53l4", 
+        "template_4wn3p0e", 
+        form.current, 
+        "ZNBR12yvxbRFoE0hg"
       )
       .then(
         () => {
           setIsSent(true);
-          form.current.reset(); // Reset form fields after sending
+          form.current.reset();
           toast.success("Message sent successfully! ✅", {
             position: "top-right",
             autoClose: 3000,
@@ -33,7 +33,7 @@ const Contact = () => {
         },
         (error) => {
           console.error("Error sending message:", error);
-          toast.error("Failed to send message. Please try again.", {
+          toast.error("Failed to send message. Please check your EmailJS dashboard.", {
             position: "top-right",
             autoClose: 3000,
             hideProgressBar: false,

@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import { experiences } from "../../constants";
 
 const Experience = () => {
@@ -28,9 +28,8 @@ const Experience = () => {
         {experiences.map((experience, index) => (
           <div
             key={experience.id}
-            className={`relative flex flex-col xl:flex-row items-center mb-16 ${
-              index % 2 === 0 ? "xl:justify-end" : "xl:justify-start"
-            }`}
+            className={`relative flex flex-col xl:flex-row items-center mb-16 ${index % 2 === 0 ? "xl:justify-end" : "xl:justify-start"
+              }`}
           >
             {/* Timeline Circle */}
             <div
@@ -45,11 +44,10 @@ const Experience = () => {
 
             {/* Experience Card */}
             <div
-              className={`w-full xl:max-w-md p-4 xl:p-8 rounded-2xl border border-white bg-gray-900 backdrop-blur-md shadow-[0_0_20px_1px_rgba(130,69,236,0.3)] transform transition-transform duration-300 hover:scale-105 ${
-                index % 2 === 0
+              className={`w-full xl:max-w-md p-4 xl:p-8 rounded-2xl border border-white bg-gray-900 backdrop-blur-md shadow-[0_0_20px_1px_rgba(130,69,236,0.3)] transform transition-transform duration-300 hover:scale-105 ${index % 2 === 0
                   ? "xl:ml-44 ml-24 xl:mr-0"
                   : "xl:mr-44 ml-24 xl:ml-0"
-              }`}
+                }`}
             >
               {/* Header Row: Logo + Info */}
               <div className="flex items-center space-x-6">
